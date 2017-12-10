@@ -4,16 +4,16 @@ class FooterActions {
 	constructor() {
 		this.generateActions(
 			'getTopCharacterSuccess',
-			'getTopCharactersFail'
+			'getTopCharacterFail'
 		);
 	}
 
 	getTopCharacters() {
 		$.ajax({url: '/api/characters/top'})
 			.done((data) => {
-				this.actions.getTopCharactersSuccess(data)
+				this.actions.getTopCharacterSuccess(data)
 			}).fail((jqXhr) => {
-				this.actions.getTopCharactersFail(jqXhr)
+				this.actions.getTopCharacterFail(jqXhr)
 			});
 	}
 }

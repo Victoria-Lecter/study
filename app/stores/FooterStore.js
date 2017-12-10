@@ -7,11 +7,11 @@ class FooterStore {
 		this.characters = [];
 	}
 
-	onGetTopCharactersSuccess(data) {
+	onGetTopCharacterSuccess(data) {
 		this.characters = data.slice(0, 5);
 	}
 
-	onGetTopCharactersFail(jqXhr) {
+	onGetTopCharacterFail(jqXhr) {
     // Handle multiple response formats, fallback to HTTP status code number.
     toastr.error(jqXhr.responseJSON && jqXhr.responseJSON.message || jqXhr.responseText || jqXhr.statusText);
   }
