@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 import AddUni from './admin/AddUni'
 import AddNews from './admin/AddNews'
 
-export default class AddContainer extends React.Component {
+export default class AddContainer extends Component {
 
   constructor(props) {
     super(props);

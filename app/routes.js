@@ -27,7 +27,7 @@ import Quest from './containers/user/Quest'
 import TableContainer from './containers/TableContainer'
 import AddContainer from './containers/AddContainer'
 
-export default (
+const routes = (
 	 <Route path='/' component={App}>
 
 	  	<Route component={Intro}>
@@ -65,3 +65,5 @@ export default (
 	  
 	  </Route>
 )
+
+export default routes;

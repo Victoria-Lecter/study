@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import axios from 'axios';
 
 export default class Header extends Component {
 
@@ -10,10 +11,10 @@ export default class Header extends Component {
 	}
 
 	handleTest() {
-    console.log(1111)
-    fetch('/test')
-    .then(results => {
-				return results.json();
+    axios.post('/test', {
+    	name: 'sdfdsf'
+    }).then(results => {
+				return results;
 			}).then(data => {
 				console.log(data)
 			})

@@ -27,6 +27,7 @@
   .Select div,
   .Select input,
   .Select span {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box; }
   .Select.is-disabled .Select-arrow-zone {
     cursor: default;
@@ -34,7 +35,8 @@
   .Select.is-disabled > .Select-control {
     background-color: #f9f9f9; }
     .Select.is-disabled > .Select-control:hover {
-      box-shadow: none; }
+      -webkit-box-shadow: none;
+              box-shadow: none; }
   .Select.is-searchable.is-open > .Select-control {
     cursor: text; }
   .Select.is-searchable.is-focused:not(.is-open) > .Select-control {
@@ -52,7 +54,8 @@
     background: #fff; }
   .Select.is-focused:not(.is-open) > .Select-control {
     border-color: #08c #0099e6 #0099e6;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 5px -1px fade(#08c, 50%); }
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 5px -1px fade(#08c, 50%);
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 5px -1px fade(#08c, 50%); }
   .Select.has-value.is-clearable.Select--single > .Select-control .Select-value {
     padding-right: 42px; }
   .Select.has-value.Select--single > .Select-control .Select-value .Select-value-label,
@@ -96,7 +99,8 @@
   position: relative;
   width: 100%; }
   .Select-control:hover {
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06); }
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06); }
   .Select-control .Select-input:focus {
     outline: none;
     background: #fff; }
@@ -125,7 +129,8 @@
   .Select-input > input {
     background: none transparent;
     border: 0 none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     cursor: default;
     display: inline-block;
     font-family: inherit;
@@ -156,7 +161,8 @@
   animation: Select-animation-spin 400ms infinite linear;
   width: 16px;
   height: 16px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 50%;
   border: 2px solid #ccc;
   border-right-color: #333;
@@ -237,8 +243,10 @@
   background-color: #fff;
   border: 1px solid #ccc;
   border-top-color: #e6e6e6;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
-  box-sizing: border-box;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-top: -1px;
   max-height: 200px;
   position: absolute;
@@ -252,7 +260,8 @@
   overflow-y: auto; }
 
 .Select-option {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #fff;
   color: #666666;
   cursor: pointer;
@@ -272,7 +281,8 @@
     cursor: default; }
 
 .Select-noresults {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #999999;
   cursor: default;
   display: block;
@@ -428,7 +438,7 @@ header {
       padding-bottom: 15px; }
       header .header_bottom p span {
         display: inline-block;
-        background: url(img/icons.png);
+        background: url(../img/icons.png);
         vertical-align: middle; }
     header .header_bottom .contacts_header {
       margin-left: 42px; }
@@ -462,7 +472,8 @@ header {
           right: 0;
           top: 52px;
           z-index: 1000;
-          box-shadow: 0px 10px 19px 2px rgba(0, 0, 0, 0.2); }
+          -webkit-box-shadow: 0px 10px 19px 2px rgba(0, 0, 0, 0.2);
+                  box-shadow: 0px 10px 19px 2px rgba(0, 0, 0, 0.2); }
           header .header_bottom .login_wrap .login .authorization .autho_content {
             width: 100%;
             background: #f6f5f3;
@@ -578,7 +589,7 @@ header {
         text-decoration: none; }
         .name_wrap .name_mnu ul li a i {
           display: inline-block;
-          background: url(img/icons.png);
+          background: url(../img/icons.png);
           width: 16px;
           height: 16px;
           margin-right: 19px;
@@ -701,7 +712,7 @@ nav {
           display: block;
           width: 18px;
           height: 18px;
-          background: url("img/icons.png");
+          background: url("../img/icons.png");
           background-position: 18px 0;
           margin-top: 5px;
           position: relative; }
@@ -749,6 +760,7 @@ nav {
   .section_1 .slider_wrap {
     width: 100%;
     height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), color-stop(80%, transparent));
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%);
     position: absolute; }
     .section_1 .slider_wrap h1 {
@@ -1065,12 +1077,14 @@ nav {
     margin-top: 40px;
     cursor: pointer; }
     .sec_4_content_wrap .sec_4_item:hover .sec_4_item_shadow {
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(80%, transparent));
       background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, transparent 80%); }
     .sec_4_content_wrap .sec_4_item img {
       margin: auto; }
     .sec_4_content_wrap .sec_4_item .sec_4_item_shadow {
       position: absolute;
       top: 0;
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), color-stop(80%, transparent));
       background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 80%);
       width: 100%;
       height: 100%;
@@ -1155,7 +1169,7 @@ nav {
 
 .section_5 {
   padding-bottom: 110px;
-  background: url(img/contact_bg_hor.png), url(img/contact_bg_hor.png), url(img/contact_bg_ver.png), url(img/contact_bg_ver.png);
+  background: url(../img/contact_bg_hor.png), url(../img/contact_bg_hor.png), url(../img/contact_bg_ver.png), url(../img/contact_bg_ver.png);
   background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
   background-position: 0 top, 0 bottom, left 0, right 0;
   padding-top: 70px; }
@@ -1217,7 +1231,7 @@ nav {
         top: 10px;
         width: 14px;
         height: 18px;
-        background: url(img/icons.png);
+        background: url(../img/icons.png);
         background-position: 129px 0; }
 
 .section_6 .button_map {
@@ -1307,6 +1321,7 @@ footer .footer_bottom {
       height: 32px;
       margin-left: 5px;
       cursor: pointer;
+      -webkit-transition: all .5s ease;
       transition: all .5s ease; }
       footer .footer_bottom .foot_cop img:hover {
         -webkit-transform: rotate(180deg);
@@ -1572,7 +1587,7 @@ textarea {
         display: block;
         width: 18px;
         height: 18px;
-        background: url(img/icons.png);
+        background: url(../img/icons.png);
         background-position: 70px -18px; }
     .foto_admin_add_wrap .foto_item_add:hover .foto_item_add_delete {
       display: -webkit-box;
@@ -1646,7 +1661,7 @@ textarea {
             margin-top: 5px;
             width: 18px;
             height: 18px;
-            background: url(img/icons.png);
+            background: url(../img/icons.png);
             background-position: 70px -36px;
             cursor: pointer; }
             .content_admin_table .content_calls table tr td:last-child i:hover {
@@ -1708,7 +1723,7 @@ textarea {
           .content_news_admin table tr td:last-child i {
             display: inline-block;
             font-size: 18px;
-            background: url(img/icons.png);
+            background: url(../img/icons.png);
             background-position: 179px -16px;
             width: 16px;
             height: 16px;
@@ -1766,7 +1781,7 @@ textarea {
             height: 4px;
             width: 16px;
             display: inline-block;
-            background: url(img/icons.png);
+            background: url(../img/icons.png);
             background-position: 34px -8px; }
             .content_admin_student table .norm_strok > td .last_tab > i:hover {
               background-position: 34px 0; }
@@ -1788,7 +1803,7 @@ textarea {
               padding-top: 8px; }
               .content_admin_student table .norm_strok > td .last_tab .active_deist ul li i {
                 display: block;
-                background: url(img/icons.png);
+                background: url(../img/icons.png);
                 cursor: pointer; }
               .content_admin_student table .norm_strok > td .last_tab .active_deist ul li:first-child i {
                 background-position: 193px -32px;
@@ -1923,7 +1938,7 @@ textarea {
           text-align: center; }
           .content_admin_university table tr td:last-child i {
             display: inline-block;
-            background: url(img/icons.png);
+            background: url(../img/icons.png);
             width: 16px;
             height: 16px;
             background-position: 179px -16px;
@@ -1950,6 +1965,7 @@ textarea {
   .uni_top_img .uni_top_img_shadow {
     width: 100%;
     height: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(70%, transparent));
     background: linear-gradient(to top, black 0%, transparent 70%);
     position: absolute;
     top: 0; }
@@ -2012,7 +2028,7 @@ textarea {
           display: inline-block;
           width: 18px;
           height: 14px;
-          background: url(img/icons.png);
+          background: url(../img/icons.png);
           background-position: 52px 0; }
         .uni_galer_inside ul li .uni_shadow_galer span {
           display: block;
@@ -2023,7 +2039,7 @@ textarea {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url(img/ICON1.png);
+  background: url(../img/ICON1.png);
   vertical-align: middle;
   margin-right: 10px;
   margin-top: -5px; }
@@ -2198,7 +2214,7 @@ textarea {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: url(img/ICON.png);
+    background: url(../img/ICON.png);
     vertical-align: middle;
     margin-top: -5px;
     margin-right: 10px; }
@@ -2293,6 +2309,7 @@ textarea {
 .transforms_up {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
+  -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
 .dop_usluh_item:not(:first-child) {
@@ -2313,6 +2330,7 @@ textarea {
     font-size: 25px;
     display: inline-block;
     margin-top: -3px;
+    -webkit-transition: all .5s ease;
     transition: all .5s ease; }
 
 .dop_usluh_item .content_dop_us {
@@ -2770,6 +2788,7 @@ textarea {
         width: 100%;
         height: 100%;
         top: 0;
+        background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), color-stop(50%, transparent));
         background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 50%);
         z-index: 1000; }
         .content_kolej_catalog .kolej_item .kolej_slider_wrap .kolej_shadow_tabs .tabs {
@@ -2845,7 +2864,7 @@ textarea {
       top: 28px;
       width: 2px;
       height: 40%;
-      background: url(img/point_grey.jpg);
+      background: url(../img/point_grey.jpg);
       background-repeat: repeat-y; }
     .lich_steps .steps_item:last-child {
       padding-bottom: 0; }
@@ -2922,7 +2941,7 @@ textarea {
         height: 14px;
         display: block;
         margin: auto;
-        background: url(img/icons.png);
+        background: url(../img/icons.png);
         background-position: 52px 0; }
   .logo_user_wrap .user_info_top {
     display: inline-block;
@@ -3467,6 +3486,7 @@ button {
       top: 0;
       left: 0;
       position: absolute;
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), color-stop(50%, transparent));
       background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 50%); }
       .blog_item .blog_img_wrap_item .shadow_blog span {
         color: white;
@@ -3680,7 +3700,7 @@ button {
         bottom: 20px;
         left: 50%;
         margin-left: -9px;
-        background: url(img/icons.png);
+        background: url(../img/icons.png);
         background-position: 70px 0; }
   .uploud_foto button {
     height: 32px;
@@ -3843,6 +3863,7 @@ button {
   /*Disable Animation on Mobile Devices*/
   .animated {
     /*CSS transitions*/
+    -webkit-transition-property: none !important;
     transition-property: none !important;
     /*CSS transforms*/
     -webkit-transform: none !important;
