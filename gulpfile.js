@@ -3,7 +3,7 @@ var gutil = require('gulp-util');
 var gulpif = require('gulp-if');
 var autoprefixer = require('gulp-autoprefixer');
 var cssmin = require('gulp-cssmin');
-var less = require('gulp-less');
+var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var plumber = require('gulp-plumber');
 var buffer = require('vinyl-buffer');
@@ -108,9 +108,9 @@ gulp.task('browserify-watch', ['browserify-vendor'], function() {
  |--------------------------------------------------------------------------
  */
 gulp.task('styles', function() {
-  return gulp.src('app/stylesheets/main.less')
+  return gulp.src('app/stylesheets/*.sass')
     .pipe(plumber())
-    .pipe(less())
+    .pipe(sass())
     .pipe(autoprefixer())
     .pipe(gulpif(production, cssmin()))
     .pipe(gulp.dest('public/css'));
