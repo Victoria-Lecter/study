@@ -10,19 +10,9 @@ import MapHome from '../components/home/MapHome'
 export default class Home extends Component {
 
   constructor(props) {
-    super(props);
-
-    this.state = {
-      numPopup: 0
-    }
-
-    this.handlePopup = this.handlePopup.bind(this);
-    
+    super(props);    
   }
 
-  handlePopup(popup) {
-    this.setState({ numPopup: popup })
-  }
 
   render() {
     return (

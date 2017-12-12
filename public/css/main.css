@@ -57,7 +57,7 @@
     -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 5px -1px fade(#08c, 50%);
             box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 5px -1px fade(#08c, 50%); }
   .Select.has-value.is-clearable.Select--single > .Select-control .Select-value {
-    padding-right: 42px; }
+    padding-right: 40px; }
   .Select.has-value.Select--single > .Select-control .Select-value .Select-value-label,
   .Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
     color: #333; }
@@ -86,14 +86,14 @@
 .Select-control {
   background-color: #fff;
   border-color: #d9d9d9 #ccc #b3b3b3;
-  border-radius: 4px;
+  border-radius: 0px;
   border: 1px solid #ccc;
   color: #333;
   cursor: default;
   display: table;
   border-spacing: 0;
   border-collapse: separate;
-  height: 36px;
+  height: 32px;
   outline: none;
   overflow: hidden;
   position: relative;
@@ -110,7 +110,7 @@
   bottom: 0;
   color: #aaa;
   left: 0;
-  line-height: 34px;
+  line-height: 30px;
   padding-left: 10px;
   padding-right: 10px;
   position: absolute;
@@ -122,7 +122,7 @@
   white-space: nowrap; }
 
 .Select-input {
-  height: 34px;
+  height: 30px;
   padding-left: 10px;
   padding-right: 10px;
   vertical-align: middle; }
@@ -139,7 +139,7 @@
     outline: none;
     line-height: 17px;
     /* For IE 8 compatibility */
-    padding: 8px 0 12px;
+    padding: 6px 0 10px;
     /* For IE 8 compatibility */
     -webkit-appearance: none; }
     .is-focused .Select-input > input {
@@ -179,17 +179,17 @@
   position: relative;
   text-align: center;
   vertical-align: middle;
-  width: 17px; }
+  width: 15px; }
   .Select-clear-zone:hover {
     color: #D0021B; }
 
 .Select-clear {
   display: inline-block;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1; }
 
 .Select--multi .Select-clear-zone {
-  width: 17px; }
+  width: 15px; }
 
 .Select--multi .Select-multi-value-wrapper {
   display: inline-block; }
@@ -238,8 +238,8 @@
     opacity: 1; } }
 
 .Select-menu-outer {
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
   background-color: #fff;
   border: 1px solid #ccc;
   border-top-color: #e6e6e6;
@@ -268,8 +268,8 @@
   display: block;
   padding: 8px 10px; }
   .Select-option:last-child {
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px; }
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px; }
   .Select-option.is-selected {
     background-color: #f5faff;
     color: #333; }
@@ -3382,7 +3382,7 @@ button {
       .anketa_popup .anketa_wrap label:not(:first-child) {
         margin-top: 20px; }
     .anketa_popup .anketa_wrap .stranno {
-      margin-top: 13px !important; }
+      margin-top: 15px !important; }
     .anketa_popup .anketa_wrap .radio_sex_wrap label {
       margin-top: 0; }
 

@@ -439,10 +439,6 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = require('react-router');
 
-var _axios = require('axios');
-
-var _axios2 = _interopRequireDefault(_axios);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -457,24 +453,10 @@ var Header = function (_Component) {
 	function Header(props) {
 		_classCallCheck(this, Header);
 
-		var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
-
-		_this.handleTest = _this.handleTest.bind(_this);
-		return _this;
+		return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
 	}
 
 	_createClass(Header, [{
-		key: 'handleTest',
-		value: function handleTest() {
-			_axios2.default.post('/test', {
-				name: 'sdfdsf'
-			}).then(function (results) {
-				return results;
-			}).then(function (data) {
-				console.log(data);
-			});
-		}
-	}, {
 		key: 'render',
 		value: function render() {
 			var _this2 = this;
@@ -487,7 +469,7 @@ var Header = function (_Component) {
 					{ className: 'header_top' },
 					_react2.default.createElement(
 						'div',
-						{ className: 'logo', onClick: this.handleTest },
+						{ className: 'logo' },
 						_react2.default.createElement('img', { src: 'img/logo.png', alt: '' })
 					),
 					_react2.default.createElement(
@@ -912,7 +894,7 @@ var Header = function (_Component) {
 
 exports.default = Header;
 
-},{"axios":59,"react":"react","react-router":"react-router"}],5:[function(require,module,exports){
+},{"react":"react","react-router":"react-router"}],5:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1275,6 +1257,8 @@ var _axios = require('axios');
 
 var _axios2 = _interopRequireDefault(_axios);
 
+var _reactRouter = require('react-router');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -1284,8 +1268,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-// import validation from '../validation.js'
-
 
 var Popup = function (_React$Component) {
 	_inherits(Popup, _React$Component);
@@ -1337,6 +1319,7 @@ var Popup = function (_React$Component) {
 			var _this2 = this;
 
 			var createID = 'scz_' + Math.random().toString().slice(-8);
+
 			this.setState({
 				id: createID
 			});
@@ -1539,8 +1522,10 @@ var Popup = function (_React$Component) {
 						'\u041C\u044B \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u043B\u0438 \u0412\u0430\u043C \u043F\u0438\u0441\u044C\u043C\u043E \u0441 \u043F\u0430\u0440\u043E\u043B\u0435\u043C \u043D\u0430 \u0443\u043A\u0430\u0437\u0430\u043D\u043D\u044B\u0439 \u043F\u043E\u0447\u0442\u043E\u0432\u044B\u0439 \u044F\u0449\u0438\u043A.'
 					),
 					_react2.default.createElement(
-						'button',
-						null,
+						_reactRouter.Link,
+						{ to: this.state.id, onClick: function onClick(e) {
+								return _this3.props.changePopup(0);
+							} },
 						'\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C'
 					)
 				),
@@ -1634,7 +1619,7 @@ var Popup = function (_React$Component) {
 
 exports.default = Popup;
 
-},{"../staticData/country.js":57,"../staticData/month.js":58,"axios":59,"react":"react","react-radio-group":97,"react-select":104}],9:[function(require,module,exports){
+},{"../staticData/country.js":57,"../staticData/month.js":58,"axios":59,"react":"react","react-radio-group":97,"react-router":"react-router","react-select":104}],9:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -7122,23 +7107,10 @@ var Home = function (_Component) {
   function Home(props) {
     _classCallCheck(this, Home);
 
-    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
-
-    _this.state = {
-      numPopup: 0
-    };
-
-    _this.handlePopup = _this.handlePopup.bind(_this);
-
-    return _this;
+    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this, props));
   }
 
   _createClass(Home, [{
-    key: 'handlePopup',
-    value: function handlePopup(popup) {
-      this.setState({ numPopup: popup });
-    }
-  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -10284,7 +10256,7 @@ exports.default = Children;
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -10294,6 +10266,10 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
+
+var _axios = require('axios');
+
+var _axios2 = _interopRequireDefault(_axios);
 
 var _Header = require('../components/Header');
 
@@ -10316,34 +10292,57 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var App = function (_Component) {
-	_inherits(App, _Component);
+  _inherits(App, _Component);
 
-	function App() {
-		_classCallCheck(this, App);
+  function App(props) {
+    _classCallCheck(this, App);
 
-		return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
-	}
+    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
-	_createClass(App, [{
-		key: 'render',
-		value: function render() {
-			return _react2.default.createElement(
-				'div',
-				null,
-				_react2.default.createElement(_Header2.default, { popup: this.handlePopup }),
-				this.props.children,
-				_react2.default.createElement(_Footer2.default, null),
-				_react2.default.createElement(_Popup2.default, _extends({}, this.state, { changePopup: this.handlePopup }))
-			);
-		}
-	}]);
+    _this.state = {
+      numPopup: 0,
+      login: false
+    };
 
-	return App;
+    _this.handlePopup = _this.handlePopup.bind(_this);
+
+    return _this;
+  }
+
+  _createClass(App, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      _axios2.default.post('/login').then(function (data) {
+        console.log(data);
+      }).catch(function (err) {
+        console.error(err);
+      });
+    }
+  }, {
+    key: 'handlePopup',
+    value: function handlePopup(popup) {
+      this.setState({ numPopup: popup });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(_Header2.default, { popup: this.handlePopup }),
+        this.props.children,
+        _react2.default.createElement(_Footer2.default, null),
+        _react2.default.createElement(_Popup2.default, _extends({}, this.state, { changePopup: this.handlePopup }))
+      );
+    }
+  }]);
+
+  return App;
 }(_react.Component);
 
 exports.default = App;
 
-},{"../components/Footer":3,"../components/Header":4,"../components/Popup":8,"react":"react"}],51:[function(require,module,exports){
+},{"../components/Footer":3,"../components/Header":4,"../components/Popup":8,"axios":59,"react":"react"}],51:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {

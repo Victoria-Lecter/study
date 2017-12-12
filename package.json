@@ -47,6 +47,7 @@
     "history": "^4.7.2",
     "mongoose": "^4.2.5",
     "morgan": "^1.6.1",
+    "nodemailer": "^4.4.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-radio-group": "^3.0.2",

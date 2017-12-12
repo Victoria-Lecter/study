@@ -3,8 +3,8 @@ import Select from 'react-select';
 import { RadioGroup, Radio } from 'react-radio-group';
 import CountryData from '../staticData/country.js'
 import Month from '../staticData/month.js'
-// import validation from '../validation.js'
-import axios from 'axios';
+import axios from 'axios'
+import { Link } from 'react-router'
 
 
 export default class Popup extends React.Component {
@@ -48,10 +48,10 @@ export default class Popup extends React.Component {
   singup(e) {
 
 	  const createID = 'scz_' + Math.random().toString().slice(-8);
+
   	this.setState({
   		id: createID
   	})
-  	
   	
   	axios.post('/singup', {
   		state: this.state,
@@ -156,7 +156,7 @@ export default class Popup extends React.Component {
 					</div>
 					<h3>Ваша заявка принята!</h3>
 					<p>Мы отправили Вам письмо с паролем на указанный почтовый ящик.</p>
-					<button>Продолжить</button>
+					<Link to={this.state.id} onClick={(e) => this.props.changePopup(0)}>Продолжить</Link>
 				</div>
 
 				<div className={this.props.numPopup == 3 ? "popup napisat_popup" : "hidden"}>

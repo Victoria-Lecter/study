@@ -1,30 +1,18 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import axios from 'axios';
 
 export default class Header extends Component {
 
 	constructor(props) {
 		super(props);
-
-		this.handleTest = this.handleTest.bind(this);
 	}
 
-	handleTest() {
-    axios.post('/test', {
-    	name: 'sdfdsf'
-    }).then(results => {
-				return results;
-			}).then(data => {
-				console.log(data)
-			})
-  }
 
 	render() {
 		return (
 			<header>
 				<div className="header_top">
-					<div className="logo" onClick={this.handleTest}><img src="img/logo.png" alt="" /></div>
+					<div className="logo"><img src="img/logo.png" alt="" /></div>
 					<nav className="big_mnu">
 						<ul>
 							<li><Link to="/">Главная</Link></li>
