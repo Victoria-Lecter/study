@@ -54,17 +54,31 @@ export default class Header extends Component {
 						<p><span></span>info@studyinczech.net</p>
 					</div>
 					<div className="login_wrap">
-						<div className="login">
+						<div className={this.props.login ? 'name_wrap' : 'hidden'}>
+							<p>Дмитрий Печунка<i className="fa fa-angle-down" aria-hidden="true"></i></p>
+							<div className="name_mnu">
+								<ul>
+									<li><Link to={this.props.id}><i></i>Личный кабинет</Link></li>
+									<li><a href=""><i></i>Моя анкета</a></li>
+									<li><a href=""><i></i>Оплата услуг</a></li>
+									<li><a href=""><i></i>Изменить пароль</a></li>
+									<li onClick={this.props.logout}><a href='/'><i></i>Выйти</a></li>
+								</ul>
+							</div>
+						</div>
+						<div className={!this.props.login ? 'login' : 'hidden'}>
 							<p><span></span>Войти</p>
 							<div className="authorization">
+							<form onSubmit={(e) => this.props.submitLogin(e)}>
 								<div className="autho_content">
-									<form action="">
+									
 										<input type="text" name="id" placeholder="Логин" onChange={(e) => this.props.changeLogin(e)} />
 										<div className="wrap_password clearfix"><input type="password" name="password" placeholder="Пароль" onChange={(e) => this.props.changeLogin(e)} /><a href="">?</a></div>
 										<p>*для получения доступа нужно <i onClick={(e) => this.props.popup(1)} className="link">заполнить анкету</i></p>
-									</form>
+									
 								</div>
-								<button onClick={this.props.submitLogin}>Авторизоваться</button>
+								<button type="submit" onClick={e => this.props.submitLogin(e)}>Авторизоваться</button>
+								</form>
 							</div>
 						</div>
 					</div>
@@ -108,15 +122,3 @@ export default class Header extends Component {
 									// 	<li><a href="">Университеты</a></li>
 									// </ul> -->
 
-// <div className="name_wrap">
-						// 	<p>Дмитрий Печунка<i className="fa fa-angle-down" aria-hidden="true"></i></p>
-						// 	<div className="name_mnu">
-						// 		<ul>
-						// 			<li><a href=""><i></i>Личный кабинет</a></li>
-						// 			<li><a href=""><i></i>Моя анкета</a></li>
-						// 			<li><a href=""><i></i>Оплата услуг</a></li>
-						// 			<li><a href=""><i></i>Изменить пароль</a></li>
-						// 			<li><a href=""><i></i>Выйти</a></li>
-						// 		</ul>
-						// 	</div>
-						// </div>

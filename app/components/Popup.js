@@ -12,38 +12,12 @@ export default class Popup extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-    	id: '',
-    	name: '',
-    	surname: '',
-    	day: '',
-    	month: false,
-    	year: '',
-    	sex: '',
-    	country: false,
-    	city: '',
-    	email: '',
-    	phone: '',
-    	admin: ''
-    }
-
     this.singup = this.singup.bind(this);
-    this.changeInfoPopup = this.changeInfoPopup.bind(this);
-    this.selectChange = this.selectChange.bind(this);
-    this.changeRadio = this.changeRadio.bind(this);
+    this.selectMiddleware = this.selectMiddleware.bind(this);
   }
 
-  selectChange(name, val) {
-  	this.setState({ [name]: val.value })
-	}
-
-
-  changeInfoPopup(e){
-  	this.setState({[e.target.name]: e.target.value}) 	
-  }
-
-  changeRadio(val){
-  	this.setState({ sex: val })
+  selectMiddleware(name, val){
+  	this.props.selectChange(name, val);
   }
 
   singup(e) {
@@ -78,27 +52,27 @@ export default class Popup extends React.Component {
 							<div className="left_anketa">
 								<label htmlFor="">Имя:</label>
 								<div className="right_item_form">
-									<input type="text" name="name" placeholder="Иван" value={this.state.name} onChange={this.changeInfoPopup}/>
+									<input type="text" name="name" placeholder="Иван" value={this.props.name} onChange={this.props.changeInfoPopup}/>
 								</div>
 								<label htmlFor="">Дата рождения:</label>
 								<div className="right_item_form">
 
 								<div className="select_date_wrap clearfix">
-										<input type="text" name="day" placeholder="5" value={this.state.day} onChange={this.changeInfoPopup} />
+										<input type="text" name="day" placeholder="5" value={this.props.day} onChange={this.props.changeInfoPopup} />
 										<div className="select_month">
 											
 											<Select
 											  name="month"
-											  value={this.state.month}
+											  value={this.props.month}
 											  placeholder="Выбрать"
 											  options={Month}
 											  clearable={false}
-											  onChange={this.selectChange.bind(this, 'month')}
+											  onChange={this.selectMiddleware.bind(this, 'month')}
 											/>
 
 
 										</div>
-										<input type="text" placeholder="1996" value={this.state.year} name="year" onChange={this.changeInfoPopup} />
+										<input type="text" placeholder="1996" value={this.props.year} name="year" onChange={this.props.changeInfoPopup} />
 									</div>									
 								</div>
 								<label className="stranno" htmlFor="">Страна:</label>
@@ -106,28 +80,32 @@ export default class Popup extends React.Component {
 
 								<Select
 								  name="country"
-								  value={this.state.country}
+								  value={this.props.country}
 								  options={CountryData}
 								  placeholder="Выбрать"
 								  clearable={false}
-								  onChange={this.selectChange.bind(this, 'country')}
+								  onChange={this.selectMiddleware.bind(this, 'country')}
 								/>
 
 
 								<label htmlFor="">E-mail:</label>
 								<div className="right_item_form">
-									<input type="text" palceholder="example@example.com" value={this.state.email} name="email" onChange={this.changeInfoPopup}/>
+									<input type="text" palceholder="example@example.com" value={this.props.email} name="email" onChange={this.props.changeInfoPopup}/>
+								</div>
+								<label htmlFor="">Пароль:</label>
+								<div className="right_item_form">
+									<input type="password" value={this.props.password} name="password" onChange={this.props.changeInfoPopup}/>
 								</div>
 								<button onClick={(e) => this.props.changePopup(0)}>Отмена</button>
 							</div>
 							<div className="right_anketa">
 								<label htmlFor="">Фамилия:</label>
 								<div className="right_item_form">
-									<input type="text" placeholder="Иванов" value={this.state.surname} name="surname" onChange={this.changeInfoPopup}/>
+									<input type="text" placeholder="Иванов" value={this.props.surname} name="surname" onChange={this.props.changeInfoPopup}/>
 								</div>
 								<label htmlFor="">Пол:</label>
 								
-								<RadioGroup className="radio_sex_wrap" selectedValue={this.state.sex} name="sex" onChange={this.changeRadio}>
+								<RadioGroup className="radio_sex_wrap" selectedValue={this.props.sex} name="sex" onChange={this.props.changeRadio}>
 
 									<Radio value="man" id="sex_1" />
 									<label htmlFor="sex_1">Мужской</label>
@@ -138,11 +116,15 @@ export default class Popup extends React.Component {
 
 								<label htmlFor="">Город:</label>
 								<div className="right_item_form">
-									<input type="text" placeholder="Москва" value={this.state.city} name="city" onChange={this.changeInfoPopup}/>
+									<input type="text" placeholder="Москва" value={this.props.city} name="city" onChange={this.props.changeInfoPopup}/>
 								</div>
 								<label htmlFor="">Телефон:</label>
 								<div className="right_item_form">
-									<input type="text" placeholder="+7 777 777 777" value={this.state.phone} name="phone" onChange={this.changeInfoPopup}/>
+									<input type="text" placeholder="+7 777 777 777" value={this.props.phone} name="phone" onChange={this.props.changeInfoPopup}/>
+								</div>
+								<label htmlFor="">Повторите пароль:</label>
+								<div className="right_item_form">
+									<input type="password" value={this.props.password_again} name="password_again" onChange={this.props.changeInfoPopup}/>
 								</div>
 								<button type="submit">Отправить</button>
 							</div>
@@ -157,7 +139,7 @@ export default class Popup extends React.Component {
 					</div>
 					<h3>Ваша заявка принята!</h3>
 					<p>Мы отправили Вам письмо с паролем на указанный почтовый ящик.</p>
-					<Link to={this.state.id} onClick={(e) => this.props.changePopup(0)}>Продолжить</Link>
+					<Link to={this.props.id} onClick={(e) => this.props.changePopup(0)}>Продолжить</Link>
 				</div>
 
 				<div className={this.props.numPopup == 3 ? "popup napisat_popup" : "hidden"}>

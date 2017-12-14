@@ -41,7 +41,7 @@ const routes = (
 		    	<Route path="/catalog/:type" component={Catalog} />
 		    	<Route path="about/contacts" component={Contacts} />
 
-		    	<Route path="user_:user" component={PersonalArea} />
+		    	<Route path="scz_:user" component={PersonalArea} />
 
 		    	<Route path="admin_:admin/table/:table" component={TableContainer} />
 		    </Route>
@@ -56,8 +56,8 @@ const routes = (
 	    		<Route path="living/:accomodation" component={InsideLiving} />
 	    		<Route path="media/blog/:item" component={InsideBlog} />
 
-	    		<Route path="user_:user/payment" component={Payment} />
-	    		<Route path="user_:user/quest/:quest" component={Quest} />
+	    		<Route path="scz_:user/payment" component={Payment} />
+	    		<Route path="scz_:user/quest/:quest" component={Quest} />
 
 	    		<Route path="admin_:admin/add/:add" component={AddContainer} />
 	    	</Route>

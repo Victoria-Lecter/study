@@ -12,7 +12,8 @@ var userSchema = new mongoose.Schema({
 	city: String,
 	email: {type: String, unique: true},
 	phone: String,
-	admin: {type: Number, default: 0}
+	admin: {type: Number, default: 0},
+	password: String
 });
 
 module.exports = mongoose.model('User', userSchema);

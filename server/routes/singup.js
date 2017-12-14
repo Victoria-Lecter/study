@@ -18,7 +18,8 @@ router.post('/', function(req, res) {
 		country: state.country,
 		city: state.city,
 		email: state.email,
-		phone: state.phone
+		phone: state.phone,
+		password: state.password
 	});
 
 	// create reusable transport method (opens pool of SMTP connections)

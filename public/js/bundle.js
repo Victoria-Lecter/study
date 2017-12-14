@@ -62,7 +62,7 @@ exports.default = AxilaryItem;
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+		value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -82,58 +82,58 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var BlogItem = function (_Component) {
-	_inherits(BlogItem, _Component);
+		_inherits(BlogItem, _Component);
 
-	function BlogItem(props) {
-		_classCallCheck(this, BlogItem);
+		function BlogItem(props) {
+				_classCallCheck(this, BlogItem);
 
-		return _possibleConstructorReturn(this, (BlogItem.__proto__ || Object.getPrototypeOf(BlogItem)).call(this, props));
-	}
-
-	_createClass(BlogItem, [{
-		key: 'render',
-		value: function render() {
-			return _react2.default.createElement(
-				'div',
-				{ className: 'blog_item item' },
-				_react2.default.createElement(
-					_reactRouter.Link,
-					{ to: 'media/blog/item' },
-					_react2.default.createElement(
-						'h3',
-						null,
-						'\u0427\u0442\u043E \u0442\u0430\u043A\u043E\u0435 \u043D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044F?'
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'blog_img_wrap_item' },
-						_react2.default.createElement('img', { src: 'img/IMG_2773.jpg', alt: '' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 'shadow_blog' },
-							_react2.default.createElement(
-								'span',
-								null,
-								'13.10.2016'
-							),
-							_react2.default.createElement(
-								'span',
-								null,
-								'9800 \u041F\u0420\u041E\u0421\u041C\u041E\u0422\u0420\u041E\u0412'
-							)
-						)
-					),
-					_react2.default.createElement(
-						'p',
-						null,
-						'\u0412\u0441\u0435\u043C \u0438\u043D\u043E\u0441\u0442\u0440\u0430\u043D\u0446\u0430\u043C, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u044E\u0442 \u0432 \u0427\u0435\u0445\u0438\u0438 \u043F\u043E\u0441\u0442\u0443\u043F\u0430\u0442\u044C \u0432 \u0412\u0423\u0417 \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u043F\u0440\u043E\u0439\u0442\u0438 \u043F\u0440\u043E\u0446\u0435\u0434\u0443\u0440\u0443 \u043D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u0438, \u0442.\u0435. \u043F\u0440\u0438\u0437\u043D\u0430\u043D\u0438\u044F \u0432\u0430\u0448\u0435\u0433\u043E \u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u043D\u0438\u044F, \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u043D\u043E\u0433\u043E \u0437\u0430\u0433\u0440\u0430\u043D\u0438\u0446\u0435\u0439, \u0440\u0430\u0432\u043D\u043E\u0446\u0435\u043D\u043D\u044B\u043C \u0447\u0435\u0448\u0441\u043A\u043E\u043C\u0443. \u0421 \u044D\u0442\u043E\u0439 \u0446\u0435\u043B\u044C\u044E \u043D\u0430 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0439 \u043E\u0440'
-					)
-				)
-			);
+				return _possibleConstructorReturn(this, (BlogItem.__proto__ || Object.getPrototypeOf(BlogItem)).call(this, props));
 		}
-	}]);
 
-	return BlogItem;
+		_createClass(BlogItem, [{
+				key: 'render',
+				value: function render() {
+						return _react2.default.createElement(
+								'div',
+								{ className: 'blog_item item' },
+								_react2.default.createElement(
+										_reactRouter.Link,
+										{ to: 'media/blog/item' },
+										_react2.default.createElement(
+												'h3',
+												null,
+												'\u0427\u0442\u043E \u0442\u0430\u043A\u043E\u0435 \u043D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044F?'
+										),
+										_react2.default.createElement(
+												'div',
+												{ className: 'blog_img_wrap_item' },
+												_react2.default.createElement('img', { src: 'img/IMG_2773.jpg', alt: '' }),
+												_react2.default.createElement(
+														'div',
+														{ className: 'shadow_blog' },
+														_react2.default.createElement(
+																'span',
+																null,
+																'13.10.2016'
+														),
+														_react2.default.createElement(
+																'span',
+																null,
+																'9800 \u041F\u0420\u041E\u0421\u041C\u041E\u0422\u0420\u041E\u0412'
+														)
+												)
+										),
+										_react2.default.createElement(
+												'p',
+												null,
+												'\u0412\u0441\u0435\u043C \u0438\u043D\u043E\u0441\u0442\u0440\u0430\u043D\u0446\u0430\u043C, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u044E\u0442 \u0432 \u0427\u0435\u0445\u0438\u0438 \u043F\u043E\u0441\u0442\u0443\u043F\u0430\u0442\u044C \u0432 \u0412\u0423\u0417 \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u043F\u0440\u043E\u0439\u0442\u0438 \u043F\u0440\u043E\u0446\u0435\u0434\u0443\u0440\u0443 \u043D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u0438, \u0442.\u0435. \u043F\u0440\u0438\u0437\u043D\u0430\u043D\u0438\u044F \u0432\u0430\u0448\u0435\u0433\u043E \u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u043D\u0438\u044F, \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u043D\u043E\u0433\u043E \u0437\u0430\u0433\u0440\u0430\u043D\u0438\u0446\u0435\u0439, \u0440\u0430\u0432\u043D\u043E\u0446\u0435\u043D\u043D\u044B\u043C \u0447\u0435\u0448\u0441\u043A\u043E\u043C\u0443. \u0421 \u044D\u0442\u043E\u0439 \u0446\u0435\u043B\u044C\u044E \u043D\u0430 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0439 \u043E\u0440'
+										)
+								)
+						);
+				}
+		}]);
+
+		return BlogItem;
 }(_react.Component);
 
 exports.default = BlogItem;
@@ -678,7 +678,75 @@ var Header = function (_Component) {
 						{ className: 'login_wrap' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'login' },
+							{ className: this.props.login ? 'name_wrap' : 'hidden' },
+							_react2.default.createElement(
+								'p',
+								null,
+								'\u0414\u043C\u0438\u0442\u0440\u0438\u0439 \u041F\u0435\u0447\u0443\u043D\u043A\u0430',
+								_react2.default.createElement('i', { className: 'fa fa-angle-down', 'aria-hidden': 'true' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'name_mnu' },
+								_react2.default.createElement(
+									'ul',
+									null,
+									_react2.default.createElement(
+										'li',
+										null,
+										_react2.default.createElement(
+											_reactRouter.Link,
+											{ to: this.props.id },
+											_react2.default.createElement('i', null),
+											'\u041B\u0438\u0447\u043D\u044B\u0439 \u043A\u0430\u0431\u0438\u043D\u0435\u0442'
+										)
+									),
+									_react2.default.createElement(
+										'li',
+										null,
+										_react2.default.createElement(
+											'a',
+											{ href: '' },
+											_react2.default.createElement('i', null),
+											'\u041C\u043E\u044F \u0430\u043D\u043A\u0435\u0442\u0430'
+										)
+									),
+									_react2.default.createElement(
+										'li',
+										null,
+										_react2.default.createElement(
+											'a',
+											{ href: '' },
+											_react2.default.createElement('i', null),
+											'\u041E\u043F\u043B\u0430\u0442\u0430 \u0443\u0441\u043B\u0443\u0433'
+										)
+									),
+									_react2.default.createElement(
+										'li',
+										null,
+										_react2.default.createElement(
+											'a',
+											{ href: '' },
+											_react2.default.createElement('i', null),
+											'\u0418\u0437\u043C\u0435\u043D\u0438\u0442\u044C \u043F\u0430\u0440\u043E\u043B\u044C'
+										)
+									),
+									_react2.default.createElement(
+										'li',
+										{ onClick: this.props.logout },
+										_react2.default.createElement(
+											'a',
+											{ href: '/' },
+											_react2.default.createElement('i', null),
+											'\u0412\u044B\u0439\u0442\u0438'
+										)
+									)
+								)
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: !this.props.login ? 'login' : 'hidden' },
 							_react2.default.createElement(
 								'p',
 								null,
@@ -689,11 +757,13 @@ var Header = function (_Component) {
 								'div',
 								{ className: 'authorization' },
 								_react2.default.createElement(
-									'div',
-									{ className: 'autho_content' },
+									'form',
+									{ onSubmit: function onSubmit(e) {
+											return _this2.props.submitLogin(e);
+										} },
 									_react2.default.createElement(
-										'form',
-										{ action: '' },
+										'div',
+										{ className: 'autho_content' },
 										_react2.default.createElement('input', { type: 'text', name: 'id', placeholder: '\u041B\u043E\u0433\u0438\u043D', onChange: function onChange(e) {
 												return _this2.props.changeLogin(e);
 											} }),
@@ -721,12 +791,14 @@ var Header = function (_Component) {
 												'\u0437\u0430\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u0430\u043D\u043A\u0435\u0442\u0443'
 											)
 										)
+									),
+									_react2.default.createElement(
+										'button',
+										{ type: 'submit', onClick: function onClick(e) {
+												return _this2.props.submitLogin(e);
+											} },
+										'\u0410\u0432\u0442\u043E\u0440\u0438\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F'
 									)
-								),
-								_react2.default.createElement(
-									'button',
-									{ onClick: this.props.submitLogin },
-									'\u0410\u0432\u0442\u043E\u0440\u0438\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F'
 								)
 							)
 						)
@@ -881,19 +953,6 @@ var Header = function (_Component) {
 // 	<li><a href="">Дополнительные услуги</a></li>
 // 	<li><a href="">Университеты</a></li>
 // </ul> -->
-
-// <div className="name_wrap">
-// 	<p>Дмитрий Печунка<i className="fa fa-angle-down" aria-hidden="true"></i></p>
-// 	<div className="name_mnu">
-// 		<ul>
-// 			<li><a href=""><i></i>Личный кабинет</a></li>
-// 			<li><a href=""><i></i>Моя анкета</a></li>
-// 			<li><a href=""><i></i>Оплата услуг</a></li>
-// 			<li><a href=""><i></i>Изменить пароль</a></li>
-// 			<li><a href=""><i></i>Выйти</a></li>
-// 		</ul>
-// 	</div>
-// </div>
 
 
 exports.default = Header;
@@ -1265,8 +1324,6 @@ var _reactRouter = require('react-router');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -1281,42 +1338,15 @@ var Popup = function (_React$Component) {
 
 		var _this = _possibleConstructorReturn(this, (Popup.__proto__ || Object.getPrototypeOf(Popup)).call(this, props));
 
-		_this.state = {
-			id: '',
-			name: '',
-			surname: '',
-			day: '',
-			month: false,
-			year: '',
-			sex: '',
-			country: false,
-			city: '',
-			email: '',
-			phone: '',
-			admin: ''
-		};
-
 		_this.singup = _this.singup.bind(_this);
-		_this.changeInfoPopup = _this.changeInfoPopup.bind(_this);
-		_this.selectChange = _this.selectChange.bind(_this);
-		_this.changeRadio = _this.changeRadio.bind(_this);
+		_this.selectMiddleware = _this.selectMiddleware.bind(_this);
 		return _this;
 	}
 
 	_createClass(Popup, [{
-		key: 'selectChange',
-		value: function selectChange(name, val) {
-			this.setState(_defineProperty({}, name, val.value));
-		}
-	}, {
-		key: 'changeInfoPopup',
-		value: function changeInfoPopup(e) {
-			this.setState(_defineProperty({}, e.target.name, e.target.value));
-		}
-	}, {
-		key: 'changeRadio',
-		value: function changeRadio(val) {
-			this.setState({ sex: val });
+		key: 'selectMiddleware',
+		value: function selectMiddleware(name, val) {
+			this.props.selectChange(name, val);
 		}
 	}, {
 		key: 'singup',
@@ -1378,7 +1408,7 @@ var Popup = function (_React$Component) {
 								_react2.default.createElement(
 									'div',
 									{ className: 'right_item_form' },
-									_react2.default.createElement('input', { type: 'text', name: 'name', placeholder: '\u0418\u0432\u0430\u043D', value: this.state.name, onChange: this.changeInfoPopup })
+									_react2.default.createElement('input', { type: 'text', name: 'name', placeholder: '\u0418\u0432\u0430\u043D', value: this.props.name, onChange: this.props.changeInfoPopup })
 								),
 								_react2.default.createElement(
 									'label',
@@ -1391,20 +1421,20 @@ var Popup = function (_React$Component) {
 									_react2.default.createElement(
 										'div',
 										{ className: 'select_date_wrap clearfix' },
-										_react2.default.createElement('input', { type: 'text', name: 'day', placeholder: '5', value: this.state.day, onChange: this.changeInfoPopup }),
+										_react2.default.createElement('input', { type: 'text', name: 'day', placeholder: '5', value: this.props.day, onChange: this.props.changeInfoPopup }),
 										_react2.default.createElement(
 											'div',
 											{ className: 'select_month' },
 											_react2.default.createElement(_reactSelect2.default, {
 												name: 'month',
-												value: this.state.month,
+												value: this.props.month,
 												placeholder: '\u0412\u044B\u0431\u0440\u0430\u0442\u044C',
 												options: _month2.default,
 												clearable: false,
-												onChange: this.selectChange.bind(this, 'month')
+												onChange: this.selectMiddleware.bind(this, 'month')
 											})
 										),
-										_react2.default.createElement('input', { type: 'text', placeholder: '1996', value: this.state.year, name: 'year', onChange: this.changeInfoPopup })
+										_react2.default.createElement('input', { type: 'text', placeholder: '1996', value: this.props.year, name: 'year', onChange: this.props.changeInfoPopup })
 									)
 								),
 								_react2.default.createElement(
@@ -1414,11 +1444,11 @@ var Popup = function (_React$Component) {
 								),
 								_react2.default.createElement(_reactSelect2.default, {
 									name: 'country',
-									value: this.state.country,
+									value: this.props.country,
 									options: _country2.default,
 									placeholder: '\u0412\u044B\u0431\u0440\u0430\u0442\u044C',
 									clearable: false,
-									onChange: this.selectChange.bind(this, 'country')
+									onChange: this.selectMiddleware.bind(this, 'country')
 								}),
 								_react2.default.createElement(
 									'label',
@@ -1428,7 +1458,17 @@ var Popup = function (_React$Component) {
 								_react2.default.createElement(
 									'div',
 									{ className: 'right_item_form' },
-									_react2.default.createElement('input', { type: 'text', palceholder: 'example@example.com', value: this.state.email, name: 'email', onChange: this.changeInfoPopup })
+									_react2.default.createElement('input', { type: 'text', palceholder: 'example@example.com', value: this.props.email, name: 'email', onChange: this.props.changeInfoPopup })
+								),
+								_react2.default.createElement(
+									'label',
+									{ htmlFor: '' },
+									'\u041F\u0430\u0440\u043E\u043B\u044C:'
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'right_item_form' },
+									_react2.default.createElement('input', { type: 'password', value: this.props.password, name: 'password', onChange: this.props.changeInfoPopup })
 								),
 								_react2.default.createElement(
 									'button',
@@ -1449,7 +1489,7 @@ var Popup = function (_React$Component) {
 								_react2.default.createElement(
 									'div',
 									{ className: 'right_item_form' },
-									_react2.default.createElement('input', { type: 'text', placeholder: '\u0418\u0432\u0430\u043D\u043E\u0432', value: this.state.surname, name: 'surname', onChange: this.changeInfoPopup })
+									_react2.default.createElement('input', { type: 'text', placeholder: '\u0418\u0432\u0430\u043D\u043E\u0432', value: this.props.surname, name: 'surname', onChange: this.props.changeInfoPopup })
 								),
 								_react2.default.createElement(
 									'label',
@@ -1458,7 +1498,7 @@ var Popup = function (_React$Component) {
 								),
 								_react2.default.createElement(
 									_reactRadioGroup.RadioGroup,
-									{ className: 'radio_sex_wrap', selectedValue: this.state.sex, name: 'sex', onChange: this.changeRadio },
+									{ className: 'radio_sex_wrap', selectedValue: this.props.sex, name: 'sex', onChange: this.props.changeRadio },
 									_react2.default.createElement(_reactRadioGroup.Radio, { value: 'man', id: 'sex_1' }),
 									_react2.default.createElement(
 										'label',
@@ -1480,7 +1520,7 @@ var Popup = function (_React$Component) {
 								_react2.default.createElement(
 									'div',
 									{ className: 'right_item_form' },
-									_react2.default.createElement('input', { type: 'text', placeholder: '\u041C\u043E\u0441\u043A\u0432\u0430', value: this.state.city, name: 'city', onChange: this.changeInfoPopup })
+									_react2.default.createElement('input', { type: 'text', placeholder: '\u041C\u043E\u0441\u043A\u0432\u0430', value: this.props.city, name: 'city', onChange: this.props.changeInfoPopup })
 								),
 								_react2.default.createElement(
 									'label',
@@ -1490,7 +1530,17 @@ var Popup = function (_React$Component) {
 								_react2.default.createElement(
 									'div',
 									{ className: 'right_item_form' },
-									_react2.default.createElement('input', { type: 'text', placeholder: '+7 777 777 777', value: this.state.phone, name: 'phone', onChange: this.changeInfoPopup })
+									_react2.default.createElement('input', { type: 'text', placeholder: '+7 777 777 777', value: this.props.phone, name: 'phone', onChange: this.props.changeInfoPopup })
+								),
+								_react2.default.createElement(
+									'label',
+									{ htmlFor: '' },
+									'\u041F\u043E\u0432\u0442\u043E\u0440\u0438\u0442\u0435 \u043F\u0430\u0440\u043E\u043B\u044C:'
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'right_item_form' },
+									_react2.default.createElement('input', { type: 'password', value: this.props.password_again, name: 'password_again', onChange: this.props.changeInfoPopup })
 								),
 								_react2.default.createElement(
 									'button',
@@ -1528,7 +1578,7 @@ var Popup = function (_React$Component) {
 					),
 					_react2.default.createElement(
 						_reactRouter.Link,
-						{ to: this.state.id, onClick: function onClick(e) {
+						{ to: this.props.id, onClick: function onClick(e) {
 								return _this3.props.changePopup(0);
 							} },
 						'\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C'
@@ -1970,7 +2020,7 @@ exports.default = RightSidebar;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+		value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -1988,95 +2038,95 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var SlideItem = function (_Component) {
-	_inherits(SlideItem, _Component);
+		_inherits(SlideItem, _Component);
 
-	function SlideItem(props) {
-		_classCallCheck(this, SlideItem);
+		function SlideItem(props) {
+				_classCallCheck(this, SlideItem);
 
-		return _possibleConstructorReturn(this, (SlideItem.__proto__ || Object.getPrototypeOf(SlideItem)).call(this, props));
-	}
-
-	_createClass(SlideItem, [{
-		key: "render",
-		value: function render() {
-			return _react2.default.createElement(
-				"div",
-				{ className: "dop_usluh_item" },
-				_react2.default.createElement(
-					"h3",
-					null,
-					"\u041D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044F \u0430\u0442\u0442\u0435\u0441\u0442\u0430\u0442\u043E\u0432 \u0438 \u0434\u0438\u043F\u043B\u043E\u043C\u043E\u0432",
-					_react2.default.createElement("i", { className: "fa fa-angle-down", "aria-hidden": "true" })
-				),
-				_react2.default.createElement(
-					"div",
-					{ className: "content_dop_us" },
-					_react2.default.createElement(
-						"p",
-						null,
-						"\u0414\u043B\u044F \u0432\u0441\u0435\u0445 \u043D\u0430\u0448\u0438\u0445 \u0441\u0442\u0443\u0434\u0435\u043D\u0442\u043E\u0432, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0443\u0436\u0435 \u0437\u0430\u043A\u0430\u0437\u0430\u043B\u0438 \u043A\u0430\u043A\u0443\u044E-\u0442\u043E \u0438\u0437 \u043D\u0430\u0448\u0438\u0445 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C, \u043D\u043E \u0434\u0430\u043D\u043D\u0430\u044F \u0443\u0441\u043B\u0443\u0433\u0430 \u043D\u0435 \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0430 \u0432 \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B, \u043C\u044B \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u043C \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u0434\u0430\u043D\u043D\u0443\u044E \u0443\u0441\u043B\u0443\u0433\u0443 \u0437\u0430 \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u0443\u044E \u043E\u043F\u043B\u0430\u0442\u0443."
-					),
-					_react2.default.createElement(
-						"h3",
-						null,
-						"\u0421\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C"
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "list_true" },
-						_react2.default.createElement(
-							"ul",
-							null,
-							_react2.default.createElement(
-								"li",
-								null,
-								"\u0414\u043B\u044F \u0443\u0436\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0445 \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432: ",
-								_react2.default.createElement(
-									"b",
-									null,
-									"5 000 \u043A\u0440\u043E\u043D"
-								),
-								" \u0438\u043B\u0438 ",
-								_react2.default.createElement(
-									"b",
-									null,
-									"185 \u20AC"
-								)
-							),
-							_react2.default.createElement(
-								"li",
-								null,
-								"\u0414\u043B\u044F \u043D\u043E\u0432\u044B\u0445 \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432: ",
-								_react2.default.createElement(
-									"b",
-									null,
-									"6 000 \u043A\u0440\u043E\u043D"
-								),
-								" \u0438\u043B\u0438 ",
-								_react2.default.createElement(
-									"b",
-									null,
-									"222 \u20AC"
-								)
-							)
-						)
-					),
-					_react2.default.createElement(
-						"p",
-						null,
-						"\u0420\u0430\u0441\u0445\u043E\u0434\u044B \u043D\u0430 \u043F\u0435\u0440\u0435\u0432\u043E\u0434\u044B, \u043D\u043E\u0442\u0430\u0440\u0438\u0430\u043B\u044C\u043D\u043E\u0435 \u0437\u0430\u0432\u0435\u0440\u0435\u043D\u0438\u0435 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u043E\u0432, \u0430 \u0442\u0430\u043A\u0436\u0435 \u0441\u0431\u043E\u0440 \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0430 \u0437\u0430 \u043D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044E \u0434\u0438\u043F\u043B\u043E\u043C\u0430 (\u043D\u0435 \u043F\u0440\u0435\u0432\u044B\u0448\u0430\u044E\u0449\u0438\u0435 1 000 \u043A\u0440\u043E\u043D) \u0432 \u0443\u043A\u0430\u0437\u0430\u043D\u043D\u0443\u044E \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u0432\u0445\u043E\u0434\u044F\u0442. \u0421\u0431\u043E\u0440\u044B \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u0440\u0435\u0432\u044B\u0448\u0430\u044E\u0442 1 000 \u043A\u0440\u043E\u043D \u0434\u043E\u043F\u043B\u0430\u0447\u0438\u0432\u0430\u0442\u044C\u0441\u044F \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u043E. "
-					),
-					_react2.default.createElement(
-						"p",
-						null,
-						"\u041F\u043E\u0432\u0442\u043E\u0440\u043D\u0430\u044F \u043F\u0440\u0435\u0434\u043E\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0443\u0441\u043B\u0443\u0433\u0438 \u043F\u0440\u0438 \u043D\u0435\u0443\u0441\u043F\u0435\u0448\u043D\u043E\u0439 \u0441\u0434\u0430\u0447\u0435 \u043D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0445 \u044D\u043A\u0437\u0430\u043C\u0435\u043D\u043E\u0432 \u0441 \u043F\u0435\u0440\u0432\u043E\u0439 \u043F\u043E\u043F\u044B\u0442\u043A\u0438 - \u0441\u043A\u0438\u0434\u043A\u0430 30%."
-					)
-				)
-			);
+				return _possibleConstructorReturn(this, (SlideItem.__proto__ || Object.getPrototypeOf(SlideItem)).call(this, props));
 		}
-	}]);
 
-	return SlideItem;
+		_createClass(SlideItem, [{
+				key: "render",
+				value: function render() {
+						return _react2.default.createElement(
+								"div",
+								{ className: "dop_usluh_item" },
+								_react2.default.createElement(
+										"h3",
+										null,
+										"\u041D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044F \u0430\u0442\u0442\u0435\u0441\u0442\u0430\u0442\u043E\u0432 \u0438 \u0434\u0438\u043F\u043B\u043E\u043C\u043E\u0432",
+										_react2.default.createElement("i", { className: "fa fa-angle-down", "aria-hidden": "true" })
+								),
+								_react2.default.createElement(
+										"div",
+										{ className: "content_dop_us" },
+										_react2.default.createElement(
+												"p",
+												null,
+												"\u0414\u043B\u044F \u0432\u0441\u0435\u0445 \u043D\u0430\u0448\u0438\u0445 \u0441\u0442\u0443\u0434\u0435\u043D\u0442\u043E\u0432, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0443\u0436\u0435 \u0437\u0430\u043A\u0430\u0437\u0430\u043B\u0438 \u043A\u0430\u043A\u0443\u044E-\u0442\u043E \u0438\u0437 \u043D\u0430\u0448\u0438\u0445 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C, \u043D\u043E \u0434\u0430\u043D\u043D\u0430\u044F \u0443\u0441\u043B\u0443\u0433\u0430 \u043D\u0435 \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0430 \u0432 \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B, \u043C\u044B \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u043C \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u0434\u0430\u043D\u043D\u0443\u044E \u0443\u0441\u043B\u0443\u0433\u0443 \u0437\u0430 \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u0443\u044E \u043E\u043F\u043B\u0430\u0442\u0443."
+										),
+										_react2.default.createElement(
+												"h3",
+												null,
+												"\u0421\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C"
+										),
+										_react2.default.createElement(
+												"div",
+												{ className: "list_true" },
+												_react2.default.createElement(
+														"ul",
+														null,
+														_react2.default.createElement(
+																"li",
+																null,
+																"\u0414\u043B\u044F \u0443\u0436\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0445 \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432: ",
+																_react2.default.createElement(
+																		"b",
+																		null,
+																		"5 000 \u043A\u0440\u043E\u043D"
+																),
+																" \u0438\u043B\u0438 ",
+																_react2.default.createElement(
+																		"b",
+																		null,
+																		"185 \u20AC"
+																)
+														),
+														_react2.default.createElement(
+																"li",
+																null,
+																"\u0414\u043B\u044F \u043D\u043E\u0432\u044B\u0445 \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432: ",
+																_react2.default.createElement(
+																		"b",
+																		null,
+																		"6 000 \u043A\u0440\u043E\u043D"
+																),
+																" \u0438\u043B\u0438 ",
+																_react2.default.createElement(
+																		"b",
+																		null,
+																		"222 \u20AC"
+																)
+														)
+												)
+										),
+										_react2.default.createElement(
+												"p",
+												null,
+												"\u0420\u0430\u0441\u0445\u043E\u0434\u044B \u043D\u0430 \u043F\u0435\u0440\u0435\u0432\u043E\u0434\u044B, \u043D\u043E\u0442\u0430\u0440\u0438\u0430\u043B\u044C\u043D\u043E\u0435 \u0437\u0430\u0432\u0435\u0440\u0435\u043D\u0438\u0435 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u043E\u0432, \u0430 \u0442\u0430\u043A\u0436\u0435 \u0441\u0431\u043E\u0440 \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0430 \u0437\u0430 \u043D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044E \u0434\u0438\u043F\u043B\u043E\u043C\u0430 (\u043D\u0435 \u043F\u0440\u0435\u0432\u044B\u0448\u0430\u044E\u0449\u0438\u0435 1 000 \u043A\u0440\u043E\u043D) \u0432 \u0443\u043A\u0430\u0437\u0430\u043D\u043D\u0443\u044E \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u0432\u0445\u043E\u0434\u044F\u0442. \u0421\u0431\u043E\u0440\u044B \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u0440\u0435\u0432\u044B\u0448\u0430\u044E\u0442 1 000 \u043A\u0440\u043E\u043D \u0434\u043E\u043F\u043B\u0430\u0447\u0438\u0432\u0430\u0442\u044C\u0441\u044F \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u043E. "
+										),
+										_react2.default.createElement(
+												"p",
+												null,
+												"\u041F\u043E\u0432\u0442\u043E\u0440\u043D\u0430\u044F \u043F\u0440\u0435\u0434\u043E\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0443\u0441\u043B\u0443\u0433\u0438 \u043F\u0440\u0438 \u043D\u0435\u0443\u0441\u043F\u0435\u0448\u043D\u043E\u0439 \u0441\u0434\u0430\u0447\u0435 \u043D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0445 \u044D\u043A\u0437\u0430\u043C\u0435\u043D\u043E\u0432 \u0441 \u043F\u0435\u0440\u0432\u043E\u0439 \u043F\u043E\u043F\u044B\u0442\u043A\u0438 - \u0441\u043A\u0438\u0434\u043A\u0430 30%."
+										)
+								)
+						);
+				}
+		}]);
+
+		return SlideItem;
 }(_react.Component);
 
 exports.default = SlideItem;
@@ -2085,7 +2135,7 @@ exports.default = SlideItem;
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+		value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -2105,58 +2155,58 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var UniItem = function (_Component) {
-	_inherits(UniItem, _Component);
+		_inherits(UniItem, _Component);
 
-	function UniItem(props) {
-		_classCallCheck(this, UniItem);
+		function UniItem(props) {
+				_classCallCheck(this, UniItem);
 
-		return _possibleConstructorReturn(this, (UniItem.__proto__ || Object.getPrototypeOf(UniItem)).call(this, props));
-	}
-
-	_createClass(UniItem, [{
-		key: 'render',
-		value: function render() {
-			return _react2.default.createElement(
-				'div',
-				{ className: 'uni_catal_item item' },
-				_react2.default.createElement(
-					_reactRouter.Link,
-					{ to: 'education/university/uni' },
-					_react2.default.createElement(
-						'h3',
-						null,
-						'T\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442'
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'foto_uni_item' },
-						_react2.default.createElement('img', { src: 'img/foto.jpg', alt: '' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 'foto_uni_item_shadow' },
-							_react2.default.createElement(
-								'span',
-								null,
-								'\u0413\u041E\u0421\u0423\u0414\u0410\u0420\u0421\u0422\u0412\u0415\u041D\u041D\u042B\u0419 \u0412\u0423\u0417'
-							),
-							_react2.default.createElement(
-								'span',
-								null,
-								'8 \u0424\u0410\u041A\u0423\u041B\u042C\u0422\u0415\u0422\u041E\u0412'
-							)
-						)
-					),
-					_react2.default.createElement(
-						'p',
-						null,
-						'\u0422\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442 \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0432 \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0435 \u043B\u0443\u0447\u0448\u0438\u0445 \u0438\u043D\u0441\u0442\u0438\u0442\u0443\u0442\u043E\u0432 \u043C\u0438\u0440\u0430 QS TopUniversities, \u0437\u0434\u0435\u0441\u044C \u0441\u0442\u0443\u0434\u0435\u043D\u0442\u044B \u0438\u0437\u0443\u0447\u0430\u044E\u0442 \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0438 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u043D\u0430\u0443\u043A\u0438, \u0430 \u0442\u0430\u043A\u0436\u0435 \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u043E. \u042D\u0442\u043E \u0441\u0442\u0430\u0440\u0435\u0439\u0448\u0438\u0439 \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442 \u0432 \u0433\u043E\u0440\u043E\u0434\u0435 \u0411\u0440\u043D\u043E, \u043E\u0441\u043D\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0432 1899 \u0433\u043E\u0434\u0443. \u0412 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0435 \u0432\u0440\u0435\u043C\u044F \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435 \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u0442 \u043D\u0430 8 \u0444\u0430\u043A\u0443\u043B\u044C\u0442\u0435\u0442\u0430\u0445 \u0438 \u0434\u0432\u0443\u0445 \u0430\u043A\u0430\u0434\u0435\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0446\u0435\u043D\u0442\u0440\u0430\u0445, \u0433\u0434\u0435 \u0443\u0447\u0438\u0442\u0441\u044F \u0431\u043E\u043B\u0435 '
-					)
-				)
-			);
+				return _possibleConstructorReturn(this, (UniItem.__proto__ || Object.getPrototypeOf(UniItem)).call(this, props));
 		}
-	}]);
 
-	return UniItem;
+		_createClass(UniItem, [{
+				key: 'render',
+				value: function render() {
+						return _react2.default.createElement(
+								'div',
+								{ className: 'uni_catal_item item' },
+								_react2.default.createElement(
+										_reactRouter.Link,
+										{ to: 'education/university/uni' },
+										_react2.default.createElement(
+												'h3',
+												null,
+												'T\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442'
+										),
+										_react2.default.createElement(
+												'div',
+												{ className: 'foto_uni_item' },
+												_react2.default.createElement('img', { src: 'img/foto.jpg', alt: '' }),
+												_react2.default.createElement(
+														'div',
+														{ className: 'foto_uni_item_shadow' },
+														_react2.default.createElement(
+																'span',
+																null,
+																'\u0413\u041E\u0421\u0423\u0414\u0410\u0420\u0421\u0422\u0412\u0415\u041D\u041D\u042B\u0419 \u0412\u0423\u0417'
+														),
+														_react2.default.createElement(
+																'span',
+																null,
+																'8 \u0424\u0410\u041A\u0423\u041B\u042C\u0422\u0415\u0422\u041E\u0412'
+														)
+												)
+										),
+										_react2.default.createElement(
+												'p',
+												null,
+												'\u0422\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442 \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0432 \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0435 \u043B\u0443\u0447\u0448\u0438\u0445 \u0438\u043D\u0441\u0442\u0438\u0442\u0443\u0442\u043E\u0432 \u043C\u0438\u0440\u0430 QS TopUniversities, \u0437\u0434\u0435\u0441\u044C \u0441\u0442\u0443\u0434\u0435\u043D\u0442\u044B \u0438\u0437\u0443\u0447\u0430\u044E\u0442 \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0438 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u043D\u0430\u0443\u043A\u0438, \u0430 \u0442\u0430\u043A\u0436\u0435 \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u043E. \u042D\u0442\u043E \u0441\u0442\u0430\u0440\u0435\u0439\u0448\u0438\u0439 \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442 \u0432 \u0433\u043E\u0440\u043E\u0434\u0435 \u0411\u0440\u043D\u043E, \u043E\u0441\u043D\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0432 1899 \u0433\u043E\u0434\u0443. \u0412 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0435 \u0432\u0440\u0435\u043C\u044F \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435 \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u0442 \u043D\u0430 8 \u0444\u0430\u043A\u0443\u043B\u044C\u0442\u0435\u0442\u0430\u0445 \u0438 \u0434\u0432\u0443\u0445 \u0430\u043A\u0430\u0434\u0435\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0446\u0435\u043D\u0442\u0440\u0430\u0445, \u0433\u0434\u0435 \u0443\u0447\u0438\u0442\u0441\u044F \u0431\u043E\u043B\u0435 '
+										)
+								)
+						);
+				}
+		}]);
+
+		return UniItem;
 }(_react.Component);
 
 exports.default = UniItem;
@@ -10276,6 +10326,8 @@ var _axios = require('axios');
 
 var _axios2 = _interopRequireDefault(_axios);
 
+var _reactRouter = require('react-router');
+
 var _Header = require('../components/Header');
 
 var _Header2 = _interopRequireDefault(_Header);
@@ -10302,35 +10354,77 @@ var App = function (_Component) {
   _inherits(App, _Component);
 
   function App(props) {
+    var _this$state;
+
     _classCallCheck(this, App);
 
     var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
-    _this.state = {
+    _this.state = (_this$state = {
       numPopup: 0,
       login: false,
-      id: '',
       password: '',
-      error: 0
-    };
+      error: 0,
+      id: '',
+      name: '',
+      surname: '',
+      day: '',
+      month: false,
+      year: '',
+      sex: '',
+      country: false,
+      city: '',
+      email: '',
+      phone: ''
+    }, _defineProperty(_this$state, 'password', ''), _defineProperty(_this$state, 'password_again', ''), _defineProperty(_this$state, 'admin', ''), _this$state);
 
     _this.handlePopup = _this.handlePopup.bind(_this);
     _this.login = _this.login.bind(_this);
     _this.handleUser = _this.handleUser.bind(_this);
     _this.constrolLogin = _this.constrolLogin.bind(_this);
+    _this.logOut = _this.logOut.bind(_this);
+
+    _this.changeInfoPopup = _this.changeInfoPopup.bind(_this);
+    _this.selectChange = _this.selectChange.bind(_this);
+    _this.changeRadio = _this.changeRadio.bind(_this);
 
     return _this;
   }
 
   _createClass(App, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var state = sessionStorage.getItem('app_state');
+      state = JSON.parse(state);
+      console.log(state);
+      this.setState(state);
+      console.log(this.state);
+    }
+  }, {
+    key: 'selectChange',
+    value: function selectChange(name, val) {
+      this.setState(_defineProperty({}, name, val.value));
+    }
+  }, {
+    key: 'changeInfoPopup',
+    value: function changeInfoPopup(e) {
+      this.setState(_defineProperty({}, e.target.name, e.target.value));
+    }
+  }, {
+    key: 'changeRadio',
+    value: function changeRadio(val) {
+      this.setState({ sex: val });
+    }
+  }, {
     key: 'login',
-    value: function login() {
+    value: function login(e) {
       var _this2 = this;
 
+      e.preventDefault();
       _axios2.default.post('/login', {
         data: this.state
-      }).then(function (data) {
-        _this2.constrolLogin(data);
+      }).then(function (res) {
+        _this2.constrolLogin(res.data);
       }).catch(function (err) {
         console.log(err);
       });
@@ -10346,15 +10440,24 @@ var App = function (_Component) {
       this.setState(_defineProperty({}, e.target.name, e.target.value));
     }
   }, {
+    key: 'logOut',
+    value: function logOut() {
+      sessionStorage.clear();
+    }
+  }, {
     key: 'constrolLogin',
     value: function constrolLogin(data) {
       if (data) {
         this.setState({ login: true });
-        console.log(data.data);
-        console.log('Login done!');
+        this.setState(data);
+        sessionStorage.clear();
+        sessionStorage.setItem('app_state', JSON.stringify(this.state));
+        window.location.href = '/scz_54940891';
       } else {
-        this.setState({ error: 1 });
-        console.log('Login faild');
+        this.setState({
+          login: false,
+          error: 1
+        });
       }
     }
   }, {
@@ -10363,13 +10466,18 @@ var App = function (_Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(_Header2.default, {
+        _react2.default.createElement(_Header2.default, _extends({}, this.state, {
           popup: this.handlePopup,
           changeLogin: this.handleUser,
-          submitLogin: this.login }),
+          submitLogin: this.login,
+          logout: this.logOut })),
         this.props.children,
         _react2.default.createElement(_Footer2.default, null),
-        _react2.default.createElement(_Popup2.default, _extends({}, this.state, { changePopup: this.handlePopup }))
+        _react2.default.createElement(_Popup2.default, _extends({}, this.state, {
+          changePopup: this.handlePopup,
+          selectChange: this.selectChange,
+          changeInfoPopup: this.changeInfoPopup,
+          changeRadio: this.changeRadio }))
       );
     }
   }]);
@@ -10379,7 +10487,7 @@ var App = function (_Component) {
 
 exports.default = App;
 
-},{"../components/Footer":3,"../components/Header":4,"../components/Popup":8,"axios":59,"react":"react"}],51:[function(require,module,exports){
+},{"../components/Footer":3,"../components/Header":4,"../components/Popup":8,"axios":59,"react":"react","react-router":"react-router"}],51:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10717,7 +10825,7 @@ var routes = _react2.default.createElement(
 			_react2.default.createElement(_reactRouter.Route, { path: '/catalog/:type/:city', component: _Catalog2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: '/catalog/:type', component: _Catalog2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'about/contacts', component: _contacts2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'user_:user', component: _PersonalArea2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'scz_:user', component: _PersonalArea2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'admin_:admin/table/:table', component: _TableContainer2.default })
 		),
 		_react2.default.createElement(
@@ -10732,8 +10840,8 @@ var routes = _react2.default.createElement(
 			_react2.default.createElement(_reactRouter.Route, { path: 'more-info/:page', component: _SlideItemsContainer2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'living/:accomodation', component: _InsideLiving2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'media/blog/:item', component: _InsideBlog2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'user_:user/payment', component: _Payment2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'user_:user/quest/:quest', component: _Quest2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'scz_:user/payment', component: _Payment2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'scz_:user/quest/:quest', component: _Quest2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'admin_:admin/add/:add', component: _AddContainer2.default })
 		)
 	)
