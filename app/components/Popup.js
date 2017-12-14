@@ -23,7 +23,8 @@ export default class Popup extends React.Component {
     	country: false,
     	city: '',
     	email: '',
-    	phone: ''
+    	phone: '',
+    	admin: ''
     }
 
     this.singup = this.singup.bind(this);

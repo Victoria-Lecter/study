@@ -59,12 +59,12 @@ export default class Header extends Component {
 							<div className="authorization">
 								<div className="autho_content">
 									<form action="">
-										<input type="text" placeholder="Логин" />
-										<div className="wrap_password clearfix"><input type="text" placeholder="Пароль" /><a href="">?</a></div>
+										<input type="text" name="id" placeholder="Логин" onChange={(e) => this.props.changeLogin(e)} />
+										<div className="wrap_password clearfix"><input type="password" name="password" placeholder="Пароль" onChange={(e) => this.props.changeLogin(e)} /><a href="">?</a></div>
 										<p>*для получения доступа нужно <i onClick={(e) => this.props.popup(1)} className="link">заполнить анкету</i></p>
 									</form>
 								</div>
-								<button>Авторизоваться</button>
+								<button onClick={this.props.submitLogin}>Авторизоваться</button>
 							</div>
 						</div>
 					</div>

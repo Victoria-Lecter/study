@@ -62,7 +62,7 @@ exports.default = AxilaryItem;
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-		value: true
+	value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -82,58 +82,58 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var BlogItem = function (_Component) {
-		_inherits(BlogItem, _Component);
+	_inherits(BlogItem, _Component);
 
-		function BlogItem(props) {
-				_classCallCheck(this, BlogItem);
+	function BlogItem(props) {
+		_classCallCheck(this, BlogItem);
 
-				return _possibleConstructorReturn(this, (BlogItem.__proto__ || Object.getPrototypeOf(BlogItem)).call(this, props));
+		return _possibleConstructorReturn(this, (BlogItem.__proto__ || Object.getPrototypeOf(BlogItem)).call(this, props));
+	}
+
+	_createClass(BlogItem, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ className: 'blog_item item' },
+				_react2.default.createElement(
+					_reactRouter.Link,
+					{ to: 'media/blog/item' },
+					_react2.default.createElement(
+						'h3',
+						null,
+						'\u0427\u0442\u043E \u0442\u0430\u043A\u043E\u0435 \u043D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044F?'
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'blog_img_wrap_item' },
+						_react2.default.createElement('img', { src: 'img/IMG_2773.jpg', alt: '' }),
+						_react2.default.createElement(
+							'div',
+							{ className: 'shadow_blog' },
+							_react2.default.createElement(
+								'span',
+								null,
+								'13.10.2016'
+							),
+							_react2.default.createElement(
+								'span',
+								null,
+								'9800 \u041F\u0420\u041E\u0421\u041C\u041E\u0422\u0420\u041E\u0412'
+							)
+						)
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'\u0412\u0441\u0435\u043C \u0438\u043D\u043E\u0441\u0442\u0440\u0430\u043D\u0446\u0430\u043C, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u044E\u0442 \u0432 \u0427\u0435\u0445\u0438\u0438 \u043F\u043E\u0441\u0442\u0443\u043F\u0430\u0442\u044C \u0432 \u0412\u0423\u0417 \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u043F\u0440\u043E\u0439\u0442\u0438 \u043F\u0440\u043E\u0446\u0435\u0434\u0443\u0440\u0443 \u043D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u0438, \u0442.\u0435. \u043F\u0440\u0438\u0437\u043D\u0430\u043D\u0438\u044F \u0432\u0430\u0448\u0435\u0433\u043E \u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u043D\u0438\u044F, \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u043D\u043E\u0433\u043E \u0437\u0430\u0433\u0440\u0430\u043D\u0438\u0446\u0435\u0439, \u0440\u0430\u0432\u043D\u043E\u0446\u0435\u043D\u043D\u044B\u043C \u0447\u0435\u0448\u0441\u043A\u043E\u043C\u0443. \u0421 \u044D\u0442\u043E\u0439 \u0446\u0435\u043B\u044C\u044E \u043D\u0430 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0439 \u043E\u0440'
+					)
+				)
+			);
 		}
+	}]);
 
-		_createClass(BlogItem, [{
-				key: 'render',
-				value: function render() {
-						return _react2.default.createElement(
-								'div',
-								{ className: 'blog_item item' },
-								_react2.default.createElement(
-										_reactRouter.Link,
-										{ to: 'media/blog/item' },
-										_react2.default.createElement(
-												'h3',
-												null,
-												'\u0427\u0442\u043E \u0442\u0430\u043A\u043E\u0435 \u043D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044F?'
-										),
-										_react2.default.createElement(
-												'div',
-												{ className: 'blog_img_wrap_item' },
-												_react2.default.createElement('img', { src: 'img/IMG_2773.jpg', alt: '' }),
-												_react2.default.createElement(
-														'div',
-														{ className: 'shadow_blog' },
-														_react2.default.createElement(
-																'span',
-																null,
-																'13.10.2016'
-														),
-														_react2.default.createElement(
-																'span',
-																null,
-																'9800 \u041F\u0420\u041E\u0421\u041C\u041E\u0422\u0420\u041E\u0412'
-														)
-												)
-										),
-										_react2.default.createElement(
-												'p',
-												null,
-												'\u0412\u0441\u0435\u043C \u0438\u043D\u043E\u0441\u0442\u0440\u0430\u043D\u0446\u0430\u043C, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u044E\u0442 \u0432 \u0427\u0435\u0445\u0438\u0438 \u043F\u043E\u0441\u0442\u0443\u043F\u0430\u0442\u044C \u0432 \u0412\u0423\u0417 \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u043F\u0440\u043E\u0439\u0442\u0438 \u043F\u0440\u043E\u0446\u0435\u0434\u0443\u0440\u0443 \u043D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u0438, \u0442.\u0435. \u043F\u0440\u0438\u0437\u043D\u0430\u043D\u0438\u044F \u0432\u0430\u0448\u0435\u0433\u043E \u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u043D\u0438\u044F, \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u043D\u043E\u0433\u043E \u0437\u0430\u0433\u0440\u0430\u043D\u0438\u0446\u0435\u0439, \u0440\u0430\u0432\u043D\u043E\u0446\u0435\u043D\u043D\u044B\u043C \u0447\u0435\u0448\u0441\u043A\u043E\u043C\u0443. \u0421 \u044D\u0442\u043E\u0439 \u0446\u0435\u043B\u044C\u044E \u043D\u0430 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0439 \u043E\u0440'
-										)
-								)
-						);
-				}
-		}]);
-
-		return BlogItem;
+	return BlogItem;
 }(_react.Component);
 
 exports.default = BlogItem;
@@ -694,11 +694,15 @@ var Header = function (_Component) {
 									_react2.default.createElement(
 										'form',
 										{ action: '' },
-										_react2.default.createElement('input', { type: 'text', placeholder: '\u041B\u043E\u0433\u0438\u043D' }),
+										_react2.default.createElement('input', { type: 'text', name: 'id', placeholder: '\u041B\u043E\u0433\u0438\u043D', onChange: function onChange(e) {
+												return _this2.props.changeLogin(e);
+											} }),
 										_react2.default.createElement(
 											'div',
 											{ className: 'wrap_password clearfix' },
-											_react2.default.createElement('input', { type: 'text', placeholder: '\u041F\u0430\u0440\u043E\u043B\u044C' }),
+											_react2.default.createElement('input', { type: 'password', name: 'password', placeholder: '\u041F\u0430\u0440\u043E\u043B\u044C', onChange: function onChange(e) {
+													return _this2.props.changeLogin(e);
+												} }),
 											_react2.default.createElement(
 												'a',
 												{ href: '' },
@@ -721,7 +725,7 @@ var Header = function (_Component) {
 								),
 								_react2.default.createElement(
 									'button',
-									null,
+									{ onClick: this.props.submitLogin },
 									'\u0410\u0432\u0442\u043E\u0440\u0438\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F'
 								)
 							)
@@ -1288,7 +1292,8 @@ var Popup = function (_React$Component) {
 			country: false,
 			city: '',
 			email: '',
-			phone: ''
+			phone: '',
+			admin: ''
 		};
 
 		_this.singup = _this.singup.bind(_this);
@@ -1965,7 +1970,7 @@ exports.default = RightSidebar;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
-		value: true
+	value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -1983,95 +1988,95 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var SlideItem = function (_Component) {
-		_inherits(SlideItem, _Component);
+	_inherits(SlideItem, _Component);
 
-		function SlideItem(props) {
-				_classCallCheck(this, SlideItem);
+	function SlideItem(props) {
+		_classCallCheck(this, SlideItem);
 
-				return _possibleConstructorReturn(this, (SlideItem.__proto__ || Object.getPrototypeOf(SlideItem)).call(this, props));
-		}
+		return _possibleConstructorReturn(this, (SlideItem.__proto__ || Object.getPrototypeOf(SlideItem)).call(this, props));
+	}
 
-		_createClass(SlideItem, [{
-				key: "render",
-				value: function render() {
-						return _react2.default.createElement(
-								"div",
-								{ className: "dop_usluh_item" },
+	_createClass(SlideItem, [{
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(
+				"div",
+				{ className: "dop_usluh_item" },
+				_react2.default.createElement(
+					"h3",
+					null,
+					"\u041D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044F \u0430\u0442\u0442\u0435\u0441\u0442\u0430\u0442\u043E\u0432 \u0438 \u0434\u0438\u043F\u043B\u043E\u043C\u043E\u0432",
+					_react2.default.createElement("i", { className: "fa fa-angle-down", "aria-hidden": "true" })
+				),
+				_react2.default.createElement(
+					"div",
+					{ className: "content_dop_us" },
+					_react2.default.createElement(
+						"p",
+						null,
+						"\u0414\u043B\u044F \u0432\u0441\u0435\u0445 \u043D\u0430\u0448\u0438\u0445 \u0441\u0442\u0443\u0434\u0435\u043D\u0442\u043E\u0432, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0443\u0436\u0435 \u0437\u0430\u043A\u0430\u0437\u0430\u043B\u0438 \u043A\u0430\u043A\u0443\u044E-\u0442\u043E \u0438\u0437 \u043D\u0430\u0448\u0438\u0445 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C, \u043D\u043E \u0434\u0430\u043D\u043D\u0430\u044F \u0443\u0441\u043B\u0443\u0433\u0430 \u043D\u0435 \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0430 \u0432 \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B, \u043C\u044B \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u043C \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u0434\u0430\u043D\u043D\u0443\u044E \u0443\u0441\u043B\u0443\u0433\u0443 \u0437\u0430 \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u0443\u044E \u043E\u043F\u043B\u0430\u0442\u0443."
+					),
+					_react2.default.createElement(
+						"h3",
+						null,
+						"\u0421\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C"
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "list_true" },
+						_react2.default.createElement(
+							"ul",
+							null,
+							_react2.default.createElement(
+								"li",
+								null,
+								"\u0414\u043B\u044F \u0443\u0436\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0445 \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432: ",
 								_react2.default.createElement(
-										"h3",
-										null,
-										"\u041D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044F \u0430\u0442\u0442\u0435\u0441\u0442\u0430\u0442\u043E\u0432 \u0438 \u0434\u0438\u043F\u043B\u043E\u043C\u043E\u0432",
-										_react2.default.createElement("i", { className: "fa fa-angle-down", "aria-hidden": "true" })
+									"b",
+									null,
+									"5 000 \u043A\u0440\u043E\u043D"
 								),
+								" \u0438\u043B\u0438 ",
 								_react2.default.createElement(
-										"div",
-										{ className: "content_dop_us" },
-										_react2.default.createElement(
-												"p",
-												null,
-												"\u0414\u043B\u044F \u0432\u0441\u0435\u0445 \u043D\u0430\u0448\u0438\u0445 \u0441\u0442\u0443\u0434\u0435\u043D\u0442\u043E\u0432, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0443\u0436\u0435 \u0437\u0430\u043A\u0430\u0437\u0430\u043B\u0438 \u043A\u0430\u043A\u0443\u044E-\u0442\u043E \u0438\u0437 \u043D\u0430\u0448\u0438\u0445 \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C, \u043D\u043E \u0434\u0430\u043D\u043D\u0430\u044F \u0443\u0441\u043B\u0443\u0433\u0430 \u043D\u0435 \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0430 \u0432 \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u044B, \u043C\u044B \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u043C \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u0434\u0430\u043D\u043D\u0443\u044E \u0443\u0441\u043B\u0443\u0433\u0443 \u0437\u0430 \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u0443\u044E \u043E\u043F\u043B\u0430\u0442\u0443."
-										),
-										_react2.default.createElement(
-												"h3",
-												null,
-												"\u0421\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C"
-										),
-										_react2.default.createElement(
-												"div",
-												{ className: "list_true" },
-												_react2.default.createElement(
-														"ul",
-														null,
-														_react2.default.createElement(
-																"li",
-																null,
-																"\u0414\u043B\u044F \u0443\u0436\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0445 \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432: ",
-																_react2.default.createElement(
-																		"b",
-																		null,
-																		"5 000 \u043A\u0440\u043E\u043D"
-																),
-																" \u0438\u043B\u0438 ",
-																_react2.default.createElement(
-																		"b",
-																		null,
-																		"185 \u20AC"
-																)
-														),
-														_react2.default.createElement(
-																"li",
-																null,
-																"\u0414\u043B\u044F \u043D\u043E\u0432\u044B\u0445 \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432: ",
-																_react2.default.createElement(
-																		"b",
-																		null,
-																		"6 000 \u043A\u0440\u043E\u043D"
-																),
-																" \u0438\u043B\u0438 ",
-																_react2.default.createElement(
-																		"b",
-																		null,
-																		"222 \u20AC"
-																)
-														)
-												)
-										),
-										_react2.default.createElement(
-												"p",
-												null,
-												"\u0420\u0430\u0441\u0445\u043E\u0434\u044B \u043D\u0430 \u043F\u0435\u0440\u0435\u0432\u043E\u0434\u044B, \u043D\u043E\u0442\u0430\u0440\u0438\u0430\u043B\u044C\u043D\u043E\u0435 \u0437\u0430\u0432\u0435\u0440\u0435\u043D\u0438\u0435 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u043E\u0432, \u0430 \u0442\u0430\u043A\u0436\u0435 \u0441\u0431\u043E\u0440 \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0430 \u0437\u0430 \u043D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044E \u0434\u0438\u043F\u043B\u043E\u043C\u0430 (\u043D\u0435 \u043F\u0440\u0435\u0432\u044B\u0448\u0430\u044E\u0449\u0438\u0435 1 000 \u043A\u0440\u043E\u043D) \u0432 \u0443\u043A\u0430\u0437\u0430\u043D\u043D\u0443\u044E \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u0432\u0445\u043E\u0434\u044F\u0442. \u0421\u0431\u043E\u0440\u044B \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u0440\u0435\u0432\u044B\u0448\u0430\u044E\u0442 1 000 \u043A\u0440\u043E\u043D \u0434\u043E\u043F\u043B\u0430\u0447\u0438\u0432\u0430\u0442\u044C\u0441\u044F \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u043E. "
-										),
-										_react2.default.createElement(
-												"p",
-												null,
-												"\u041F\u043E\u0432\u0442\u043E\u0440\u043D\u0430\u044F \u043F\u0440\u0435\u0434\u043E\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0443\u0441\u043B\u0443\u0433\u0438 \u043F\u0440\u0438 \u043D\u0435\u0443\u0441\u043F\u0435\u0448\u043D\u043E\u0439 \u0441\u0434\u0430\u0447\u0435 \u043D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0445 \u044D\u043A\u0437\u0430\u043C\u0435\u043D\u043E\u0432 \u0441 \u043F\u0435\u0440\u0432\u043E\u0439 \u043F\u043E\u043F\u044B\u0442\u043A\u0438 - \u0441\u043A\u0438\u0434\u043A\u0430 30%."
-										)
+									"b",
+									null,
+									"185 \u20AC"
 								)
-						);
-				}
-		}]);
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								"\u0414\u043B\u044F \u043D\u043E\u0432\u044B\u0445 \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432: ",
+								_react2.default.createElement(
+									"b",
+									null,
+									"6 000 \u043A\u0440\u043E\u043D"
+								),
+								" \u0438\u043B\u0438 ",
+								_react2.default.createElement(
+									"b",
+									null,
+									"222 \u20AC"
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						"p",
+						null,
+						"\u0420\u0430\u0441\u0445\u043E\u0434\u044B \u043D\u0430 \u043F\u0435\u0440\u0435\u0432\u043E\u0434\u044B, \u043D\u043E\u0442\u0430\u0440\u0438\u0430\u043B\u044C\u043D\u043E\u0435 \u0437\u0430\u0432\u0435\u0440\u0435\u043D\u0438\u0435 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u043E\u0432, \u0430 \u0442\u0430\u043A\u0436\u0435 \u0441\u0431\u043E\u0440 \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0430 \u0437\u0430 \u043D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044E \u0434\u0438\u043F\u043B\u043E\u043C\u0430 (\u043D\u0435 \u043F\u0440\u0435\u0432\u044B\u0448\u0430\u044E\u0449\u0438\u0435 1 000 \u043A\u0440\u043E\u043D) \u0432 \u0443\u043A\u0430\u0437\u0430\u043D\u043D\u0443\u044E \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u0432\u0445\u043E\u0434\u044F\u0442. \u0421\u0431\u043E\u0440\u044B \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u0440\u0435\u0432\u044B\u0448\u0430\u044E\u0442 1 000 \u043A\u0440\u043E\u043D \u0434\u043E\u043F\u043B\u0430\u0447\u0438\u0432\u0430\u0442\u044C\u0441\u044F \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u043E. "
+					),
+					_react2.default.createElement(
+						"p",
+						null,
+						"\u041F\u043E\u0432\u0442\u043E\u0440\u043D\u0430\u044F \u043F\u0440\u0435\u0434\u043E\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0443\u0441\u043B\u0443\u0433\u0438 \u043F\u0440\u0438 \u043D\u0435\u0443\u0441\u043F\u0435\u0448\u043D\u043E\u0439 \u0441\u0434\u0430\u0447\u0435 \u043D\u043E\u0441\u0442\u0440\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u043E\u043D\u043D\u044B\u0445 \u044D\u043A\u0437\u0430\u043C\u0435\u043D\u043E\u0432 \u0441 \u043F\u0435\u0440\u0432\u043E\u0439 \u043F\u043E\u043F\u044B\u0442\u043A\u0438 - \u0441\u043A\u0438\u0434\u043A\u0430 30%."
+					)
+				)
+			);
+		}
+	}]);
 
-		return SlideItem;
+	return SlideItem;
 }(_react.Component);
 
 exports.default = SlideItem;
@@ -2080,7 +2085,7 @@ exports.default = SlideItem;
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-		value: true
+	value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -2100,58 +2105,58 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var UniItem = function (_Component) {
-		_inherits(UniItem, _Component);
+	_inherits(UniItem, _Component);
 
-		function UniItem(props) {
-				_classCallCheck(this, UniItem);
+	function UniItem(props) {
+		_classCallCheck(this, UniItem);
 
-				return _possibleConstructorReturn(this, (UniItem.__proto__ || Object.getPrototypeOf(UniItem)).call(this, props));
+		return _possibleConstructorReturn(this, (UniItem.__proto__ || Object.getPrototypeOf(UniItem)).call(this, props));
+	}
+
+	_createClass(UniItem, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ className: 'uni_catal_item item' },
+				_react2.default.createElement(
+					_reactRouter.Link,
+					{ to: 'education/university/uni' },
+					_react2.default.createElement(
+						'h3',
+						null,
+						'T\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442'
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'foto_uni_item' },
+						_react2.default.createElement('img', { src: 'img/foto.jpg', alt: '' }),
+						_react2.default.createElement(
+							'div',
+							{ className: 'foto_uni_item_shadow' },
+							_react2.default.createElement(
+								'span',
+								null,
+								'\u0413\u041E\u0421\u0423\u0414\u0410\u0420\u0421\u0422\u0412\u0415\u041D\u041D\u042B\u0419 \u0412\u0423\u0417'
+							),
+							_react2.default.createElement(
+								'span',
+								null,
+								'8 \u0424\u0410\u041A\u0423\u041B\u042C\u0422\u0415\u0422\u041E\u0412'
+							)
+						)
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						'\u0422\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442 \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0432 \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0435 \u043B\u0443\u0447\u0448\u0438\u0445 \u0438\u043D\u0441\u0442\u0438\u0442\u0443\u0442\u043E\u0432 \u043C\u0438\u0440\u0430 QS TopUniversities, \u0437\u0434\u0435\u0441\u044C \u0441\u0442\u0443\u0434\u0435\u043D\u0442\u044B \u0438\u0437\u0443\u0447\u0430\u044E\u0442 \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0438 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u043D\u0430\u0443\u043A\u0438, \u0430 \u0442\u0430\u043A\u0436\u0435 \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u043E. \u042D\u0442\u043E \u0441\u0442\u0430\u0440\u0435\u0439\u0448\u0438\u0439 \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442 \u0432 \u0433\u043E\u0440\u043E\u0434\u0435 \u0411\u0440\u043D\u043E, \u043E\u0441\u043D\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0432 1899 \u0433\u043E\u0434\u0443. \u0412 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0435 \u0432\u0440\u0435\u043C\u044F \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435 \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u0442 \u043D\u0430 8 \u0444\u0430\u043A\u0443\u043B\u044C\u0442\u0435\u0442\u0430\u0445 \u0438 \u0434\u0432\u0443\u0445 \u0430\u043A\u0430\u0434\u0435\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0446\u0435\u043D\u0442\u0440\u0430\u0445, \u0433\u0434\u0435 \u0443\u0447\u0438\u0442\u0441\u044F \u0431\u043E\u043B\u0435 '
+					)
+				)
+			);
 		}
+	}]);
 
-		_createClass(UniItem, [{
-				key: 'render',
-				value: function render() {
-						return _react2.default.createElement(
-								'div',
-								{ className: 'uni_catal_item item' },
-								_react2.default.createElement(
-										_reactRouter.Link,
-										{ to: 'education/university/uni' },
-										_react2.default.createElement(
-												'h3',
-												null,
-												'T\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442'
-										),
-										_react2.default.createElement(
-												'div',
-												{ className: 'foto_uni_item' },
-												_react2.default.createElement('img', { src: 'img/foto.jpg', alt: '' }),
-												_react2.default.createElement(
-														'div',
-														{ className: 'foto_uni_item_shadow' },
-														_react2.default.createElement(
-																'span',
-																null,
-																'\u0413\u041E\u0421\u0423\u0414\u0410\u0420\u0421\u0422\u0412\u0415\u041D\u041D\u042B\u0419 \u0412\u0423\u0417'
-														),
-														_react2.default.createElement(
-																'span',
-																null,
-																'8 \u0424\u0410\u041A\u0423\u041B\u042C\u0422\u0415\u0422\u041E\u0412'
-														)
-												)
-										),
-										_react2.default.createElement(
-												'p',
-												null,
-												'\u0422\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442 \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0432 \u0440\u0435\u0439\u0442\u0438\u043D\u0433\u0435 \u043B\u0443\u0447\u0448\u0438\u0445 \u0438\u043D\u0441\u0442\u0438\u0442\u0443\u0442\u043E\u0432 \u043C\u0438\u0440\u0430 QS TopUniversities, \u0437\u0434\u0435\u0441\u044C \u0441\u0442\u0443\u0434\u0435\u043D\u0442\u044B \u0438\u0437\u0443\u0447\u0430\u044E\u0442 \u0442\u0435\u0445\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u0438 \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u043D\u0430\u0443\u043A\u0438, \u0430 \u0442\u0430\u043A\u0436\u0435 \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u043E. \u042D\u0442\u043E \u0441\u0442\u0430\u0440\u0435\u0439\u0448\u0438\u0439 \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442 \u0432 \u0433\u043E\u0440\u043E\u0434\u0435 \u0411\u0440\u043D\u043E, \u043E\u0441\u043D\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0432 1899 \u0433\u043E\u0434\u0443. \u0412 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0435 \u0432\u0440\u0435\u043C\u044F \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u0435 \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u0442 \u043D\u0430 8 \u0444\u0430\u043A\u0443\u043B\u044C\u0442\u0435\u0442\u0430\u0445 \u0438 \u0434\u0432\u0443\u0445 \u0430\u043A\u0430\u0434\u0435\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0446\u0435\u043D\u0442\u0440\u0430\u0445, \u0433\u0434\u0435 \u0443\u0447\u0438\u0442\u0441\u044F \u0431\u043E\u043B\u0435 '
-										)
-								)
-						);
-				}
-		}]);
-
-		return UniItem;
+	return UniItem;
 }(_react.Component);
 
 exports.default = UniItem;
@@ -10285,6 +10290,8 @@ var _Popup2 = _interopRequireDefault(_Popup);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -10301,21 +10308,31 @@ var App = function (_Component) {
 
     _this.state = {
       numPopup: 0,
-      login: false
+      login: false,
+      id: '',
+      password: '',
+      error: 0
     };
 
     _this.handlePopup = _this.handlePopup.bind(_this);
+    _this.login = _this.login.bind(_this);
+    _this.handleUser = _this.handleUser.bind(_this);
+    _this.constrolLogin = _this.constrolLogin.bind(_this);
 
     return _this;
   }
 
   _createClass(App, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      _axios2.default.post('/login').then(function (data) {
-        console.log(data);
+    key: 'login',
+    value: function login() {
+      var _this2 = this;
+
+      _axios2.default.post('/login', {
+        data: this.state
+      }).then(function (data) {
+        _this2.constrolLogin(data);
       }).catch(function (err) {
-        console.error(err);
+        console.log(err);
       });
     }
   }, {
@@ -10324,12 +10341,32 @@ var App = function (_Component) {
       this.setState({ numPopup: popup });
     }
   }, {
+    key: 'handleUser',
+    value: function handleUser(e) {
+      this.setState(_defineProperty({}, e.target.name, e.target.value));
+    }
+  }, {
+    key: 'constrolLogin',
+    value: function constrolLogin(data) {
+      if (data) {
+        this.setState({ login: true });
+        console.log(data.data);
+        console.log('Login done!');
+      } else {
+        this.setState({ error: 1 });
+        console.log('Login faild');
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(_Header2.default, { popup: this.handlePopup }),
+        _react2.default.createElement(_Header2.default, {
+          popup: this.handlePopup,
+          changeLogin: this.handleUser,
+          submitLogin: this.login }),
         this.props.children,
         _react2.default.createElement(_Footer2.default, null),
         _react2.default.createElement(_Popup2.default, _extends({}, this.state, { changePopup: this.handlePopup }))

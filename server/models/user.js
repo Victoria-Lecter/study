@@ -10,8 +10,9 @@ var userSchema = new mongoose.Schema({
 	sex: String,
 	country: String,
 	city: String,
-	email: String,
-	phone: String
+	email: {type: String, unique: true},
+	phone: String,
+	admin: {type: Number, default: 0}
 });
 
 module.exports = mongoose.model('User', userSchema);
