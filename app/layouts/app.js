@@ -7,32 +7,37 @@ import Footer from '../components/Footer'
 import Popup from '../components/Popup'
 import Children from './children'
 
+const stateDefaults = {
+  isLoggingIn: false, // waiting for login to happen
+  isLoggingInError: false,
+
+  numPopup: 0,
+  login: false,
+  password: '',
+  error: 0,
+  id: '',
+  name: '',
+  surname: '',
+  day: '',
+  month: false,
+  year: '',
+  sex: '',
+  country: false,
+  city: '',
+  email: '',
+  phone: '',
+  password_again: '',
+  admin: ''
+};
 
 export default class App extends Component {
 
   constructor(props) {
     super(props);
 
-    this.state = {
-      numPopup: 0,
-      login: false,
-      password: '',
-      error: 0,
-      id: '',
-      name: '',
-      surname: '',
-      day: '',
-      month: false,
-      year: '',
-      sex: '',
-      country: false,
-      city: '',
-      email: '',
-      phone: '',
-      password: '',
-      password_again: '',
-      admin: ''
-    }
+    const state = JSON.parce(sessionStorage.getItem('app_state'));
+
+    this.state = Object.assign(stateDefaults, state);
 
     this.handlePopup = this.handlePopup.bind(this);
     this.login = this.login.bind(this);
@@ -43,13 +48,7 @@ export default class App extends Component {
     this.changeInfoPopup = this.changeInfoPopup.bind(this);
     this.selectChange = this.selectChange.bind(this);
     this.changeRadio = this.changeRadio.bind(this);
-    
-  }
 
-  componentDidMount(){
-    var state = sessionStorage.getItem('app_state')
-    state = JSON.parse(state)
-    this.setState(state);
   }
 
   selectChange(name, val) {
@@ -58,7 +57,7 @@ export default class App extends Component {
 
 
   changeInfoPopup(e){
-    this.setState({[e.target.name]: e.target.value})  
+    this.setState({[e.target.name]: e.target.value})
   }
 
   changeRadio(val){
@@ -67,13 +66,23 @@ export default class App extends Component {
 
   login(e) {
     e.preventDefault();
+
+    this.setState({ isLoggingIn: true });
+
     axios.post('/login', {
       data: this.state
-    }).then(res => {
+    })
+      .then(res => {
+        this.setState({ isLoggingIn: false });
         this.constrolLogin(res.data);
-      }).catch(err => {
-        console.log(err)
       })
+      .catch(err => {
+        this.setState({
+          isLoggingIn: false,
+          isLoggingInError: true,
+        });
+        console.log(err)
+      });
   }
 
   handlePopup(popup) {
@@ -106,10 +115,20 @@ export default class App extends Component {
 
 
 	render() {
-    var childrenWithProps = React.cloneElement(this.props.children, {appState: this.state});
+
+    if (this.state.isLoggingIn) {
+      // return <Spinner />
+      return "Singing in... Please wait";
+    }
+    else if (this.state.isLoggingInError) {
+      // on error...
+      return "You've messed up";
+    }
+
+    let childrenWithProps = React.cloneElement(this.props.children, {appState: this.state});
 		return (
 			<div>
-				<Header 
+				<Header
           {...this.state}
           popup={this.handlePopup}
           changeLogin={this.handleUser}
@@ -119,8 +138,8 @@ export default class App extends Component {
 				{childrenWithProps}
 
 				<Footer />
-				<Popup 
-          {...this.state} 
+				<Popup
+          {...this.state}
           changePopup={this.handlePopup}
           selectChange={this.selectChange}
           changeInfoPopup={this.changeInfoPopup}
