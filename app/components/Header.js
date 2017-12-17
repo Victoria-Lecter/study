@@ -55,7 +55,7 @@ export default class Header extends Component {
 					</div>
 					<div className="login_wrap">
 						<div className={this.props.login ? 'name_wrap' : 'hidden'}>
-							<p>Дмитрий Печунка<i className="fa fa-angle-down" aria-hidden="true"></i></p>
+							<p>{this.props.name} {this.props.surname}<i className="fa fa-angle-down" aria-hidden="true"></i></p>
 							<div className="name_mnu">
 								<ul>
 									<li><Link to={this.props.id}><i></i>Личный кабинет</Link></li>

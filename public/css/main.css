@@ -2305,6 +2305,8 @@ textarea {
     line-height: 18px;
     padding-left: 15px;
     padding-right: 15px; }
+  .right_info .user_info_top p {
+    padding-left: 0; }
 
 .transforms_up {
   -webkit-transform: rotate(-180deg);

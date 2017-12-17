@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {hydrate} from 'react-dom';
 
 export default class PersonalArea extends Component {
 
@@ -55,7 +56,7 @@ export default class PersonalArea extends Component {
 						</div>
 					</div>
 					<div className="user_info_top">
-						<p>Яснев Данил</p>
+						<p>{this.props.appState.name} {this.props.appState.surname}</p>
 						<span>Номер анкеты: 14204</span>
 					</div>
 				</div>

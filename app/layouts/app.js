@@ -5,6 +5,7 @@ import {Route, Redirect} from 'react-router'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Popup from '../components/Popup'
+import Children from './children'
 
 
 export default class App extends Component {
@@ -48,9 +49,7 @@ export default class App extends Component {
   componentDidMount(){
     var state = sessionStorage.getItem('app_state')
     state = JSON.parse(state)
-    console.log(state)
     this.setState(state);
-    console.log(this.state)
   }
 
   selectChange(name, val) {
@@ -95,7 +94,7 @@ export default class App extends Component {
       this.setState(data)
       sessionStorage.clear();
       sessionStorage.setItem('app_state', JSON.stringify(this.state))
-      window.location.href = '/scz_54940891';
+      window.location.href = this.state.id;
     }else{
       this.setState({
         login: false,
@@ -104,7 +103,10 @@ export default class App extends Component {
     }
   }
 
+
+
 	render() {
+    var childrenWithProps = React.cloneElement(this.props.children, {appState: this.state});
 		return (
 			<div>
 				<Header 
@@ -113,7 +115,9 @@ export default class App extends Component {
           changeLogin={this.handleUser}
           submitLogin={this.login}
           logout={this.logOut}/>
-				{this.props.children}
+
+				{childrenWithProps}
+
 				<Footer />
 				<Popup 
           {...this.state} 
