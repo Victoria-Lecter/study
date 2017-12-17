@@ -115,7 +115,17 @@ export default class App extends Component {
 
 
 	render() {
-    var childrenWithProps = React.cloneElement(this.props.children, {appState: this.state});
+
+    if (this.state.isLoggingIn) {
+      // return <Spinner />
+      return "Singing in... Please wait";
+    }
+    else if (this.state.isLoggingInError) {
+      // on error...
+      return "You've messed up";
+    }
+
+    let childrenWithProps = React.cloneElement(this.props.children, {appState: this.state});
 		return (
 			<div>
 				<Header
