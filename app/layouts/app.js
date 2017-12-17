@@ -5,9 +5,11 @@ import {Route, Redirect} from 'react-router'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Popup from '../components/Popup'
-import Children from './children'
+import { Loader } from '../components/Loader';
+// import Children from './children'
 
 const stateDefaults = {
+  loading: true,
   isLoggingIn: false, // waiting for login to happen
   isLoggingInError: false,
 
@@ -35,9 +37,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
 
-    const state = JSON.parce(sessionStorage.getItem('app_state'));
-
-    this.state = Object.assign(stateDefaults, state);
+    this.state = Object.assign(stateDefaults);
 
     this.handlePopup = this.handlePopup.bind(this);
     this.login = this.login.bind(this);
@@ -49,6 +49,14 @@ export default class App extends Component {
     this.selectChange = this.selectChange.bind(this);
     this.changeRadio = this.changeRadio.bind(this);
 
+  }
+
+  componentDidMount() {
+    const state = JSON.parse(sessionStorage.getItem('app_state'));
+
+    this.setState(Object.assign({}, state, {
+      loading: false
+    }));
   }
 
   selectChange(name, val) {
@@ -116,7 +124,10 @@ export default class App extends Component {
 
 	render() {
 
-    if (this.state.isLoggingIn) {
+    if (this.state.loading) {
+      return <Loader />;
+    }
+    else if (this.state.isLoggingIn) {
       // return <Spinner />
       return "Singing in... Please wait";
     }
