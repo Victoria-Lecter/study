@@ -8,6 +8,9 @@ import Popup from '../components/Popup'
 import Children from './children'
 
 const stateDefaults = {
+  isLoggingIn: false, // waiting for login to happen
+  isLoggingInError: false,
+
   numPopup: 0,
   login: false,
   password: '',
@@ -63,13 +66,23 @@ export default class App extends Component {
 
   login(e) {
     e.preventDefault();
+
+    this.setState({ isLoggingIn: true });
+
     axios.post('/login', {
       data: this.state
-    }).then(res => {
+    })
+      .then(res => {
+        this.setState({ isLoggingIn: false });
         this.constrolLogin(res.data);
-      }).catch(err => {
-        console.log(err)
       })
+      .catch(err => {
+        this.setState({
+          isLoggingIn: false,
+          isLoggingInError: true,
+        });
+        console.log(err)
+      });
   }
 
   handlePopup(popup) {
